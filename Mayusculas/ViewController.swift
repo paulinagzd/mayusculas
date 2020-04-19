@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, protocoloCambiarNivel {
 
     var arrDatos: NSArray!
+    var nivel: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +21,18 @@ class ViewController: UIViewController {
         //lTest.text = dato["letraAPoner"] as? String asi accesas los valores, solo cambien lo que está dentro de las []
     }
     
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    // }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "niveles" {
+            let vistaNiveles = segue.destination as! SettingsViewController
+            vistaNiveles.delegadoNiveles = self
+        }
+    }
+    
+    // MARK: - protocolos
+    
+    func cambiaNivel(n: Int) {
+        nivel = n
+    }
+    
 }
 
