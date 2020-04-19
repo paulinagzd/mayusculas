@@ -8,34 +8,51 @@
 
 import UIKit
 
-protocol protocoloCambiarNivel {
+protocol protocoloSettings {
     func cambiaNivel(n : Int) -> Void
+    func cambiaModalidad(m : Int) -> Void
 }
 
 class SettingsViewController: UIViewController {
 
-    var delegadoNiveles : protocoloCambiarNivel!
+    var delegado : protocoloSettings!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
+    //MARK: - metodos para cambio de nivel
     @IBAction func principiante(_ sender: Any) {
-        delegadoNiveles.cambiaNivel(n: 1)
+        delegado.cambiaNivel(n: 1)
         navigationController?.popViewController(animated: true)
     }
     
     @IBAction func intermedio(_ sender: Any) {
-        delegadoNiveles.cambiaNivel(n: 2)
+        delegado.cambiaNivel(n: 2)
         navigationController?.popViewController(animated: true)
     }
     
     @IBAction func avanzado(_ sender: Any) {
-        delegadoNiveles.cambiaNivel(n: 3)
+        delegado.cambiaNivel(n: 3)
         navigationController?.popViewController(animated: true)
     }
     
+    //MARK: - metodos para cambio de modalidad
+    
+    @IBAction func porLetra(_ sender: Any) {
+        delegado.cambiaModalidad(m: 1)
+        navigationController?.popViewController(animated: true)
+
+    }
+    
+    @IBAction func porCerteza(_ sender: Any) {
+        delegado.cambiaModalidad(m: 2)
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func completar(_ sender: Any) {
+        delegado.cambiaModalidad(m: 3)
+        navigationController?.popViewController(animated: true)
+    }
 }
 
