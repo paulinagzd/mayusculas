@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewControllerComoJugar.swift
 //  Mayusculas
 //
 //  Created by Paulina González Dávalos on 4/18/20.
@@ -8,13 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerComoJugar: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Cómo jugar"
+
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func doneButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -22,7 +30,6 @@ class ViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-
+    */
 
 }
-
