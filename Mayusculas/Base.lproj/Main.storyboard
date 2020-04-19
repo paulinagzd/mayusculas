@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CuF-3c-j7t">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menú-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,6 +36,9 @@
                                         <state key="normal" title="Seleccionar nivel">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="wXb-0v-zbH" kind="show" id="S6k-hh-Bil"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mayúsculas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My0-sg-utN">
                                         <rect key="frame" x="64" y="31" width="188" height="39"/>
@@ -52,6 +55,9 @@
                                         <state key="normal" title="Seleccionar modalidad">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="wdb-PY-5G9" kind="show" id="hFs-M3-Mmq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z04-9O-QG5">
                                         <rect key="frame" x="48" y="228" width="220" height="38"/>
@@ -62,7 +68,7 @@
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="CuF-3c-j7t" kind="presentation" modalPresentationStyle="fullScreen" id="c5B-E0-OFJ"/>
+                                            <segue destination="xUi-zq-aVm" kind="show" id="sgz-qc-OOq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,11 +78,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vYr-q6-pXc"/>
+                    <navigationItem key="navigationItem" title="Menú" id="vYr-q6-pXc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-633" y="-705"/>
+            <point key="canvasLocation" x="49" y="-1329"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NAG-2t-TZH">
@@ -292,10 +298,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Xqn-bF-CaI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0Iq-3j-5jq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOE-vf-Hc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="985" y="607"/>
+            <point key="canvasLocation" x="937" y="-842"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ELU-ir-DQ5">
@@ -419,10 +426,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Cs-nV-xSR"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6M2-io-XTH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGF-kQ-daf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="606"/>
+            <point key="canvasLocation" x="937" y="-1623"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZLt-9h-6IP">
@@ -433,17 +441,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="xUi-zq-aVm" kind="relationship" relationship="rootViewController" id="8JO-4o-z7J"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vib-Fb-QjU"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hoe-zX-iMW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="-704"/>
+            <point key="canvasLocation" x="-890" y="-1329"/>
         </scene>
         <!--View Controller Como Jugar-->
         <scene sceneID="gF2-Kz-KoT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l0L-eS-gm7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="xUi-zq-aVm" customClass="ViewControllerComoJugar" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4zh-of-FU2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -517,17 +524,12 @@
                         <viewLayoutGuide key="safeArea" id="WkX-yO-jgl"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="AnB-H8-4x5">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="eae-6V-nND">
-                            <connections>
-                                <action selector="doneButton:" destination="xUi-zq-aVm" id="xg1-pn-MEN"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="AnB-H8-4x5"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0L-eS-gm7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="-706"/>
+            <point key="canvasLocation" x="510" y="-182"/>
         </scene>
     </scenes>
 </document>
