@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, protocoloCambiarNivel {
+class ViewController: UIViewController, protocoloSettings {
 
     var arrDatos: NSArray!
-    var nivel: Int = 1
+    var nivel: Int = 1 // 1 = principiante,  2 = intermedio,  3 = avanzado
+    var modalidad: Int = 1 // 1 = por letra,  2 = por certeza (VoF),  3 = completar
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +25,30 @@ class ViewController: UIViewController, protocoloCambiarNivel {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "niveles" {
             let vistaNiveles = segue.destination as! SettingsViewController
-            vistaNiveles.delegadoNiveles = self
+            vistaNiveles.delegado = self
+        } else if segue.identifier == "modalidades" {
+            let vistaMod = segue.destination as! SettingsViewController
+            vistaMod.delegado = self
         }
     }
+    
+    
+    @IBAction func aber(_ sender: Any) {
+        print("nivel es ", nivel)
+        print("modalidad es ", modalidad)
+    }
+    
+    
+    
     
     // MARK: - protocolos
     
     func cambiaNivel(n: Int) {
         nivel = n
+    }
+    
+    func cambiaModalidad(m: Int) {
+        modalidad = m
     }
     
 }
