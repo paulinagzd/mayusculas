@@ -29,6 +29,10 @@ class ViewController: UIViewController, protocoloSettings {
         } else if segue.identifier == "modalidades" {
             let vistaMod = segue.destination as! SettingsViewController
             vistaMod.delegado = self
+        } else if segue.identifier == "iniciar" {
+            let vistaIniciar = segue.destination as! GameModeViewController
+            vistaIniciar.nivel = nivel
+            vistaIniciar.modalidad = modalidad
         }
     }
     
