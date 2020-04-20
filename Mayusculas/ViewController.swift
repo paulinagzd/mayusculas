@@ -33,6 +33,7 @@ class ViewController: UIViewController, protocoloSettings {
             let vistaIniciar = segue.destination as! GameModeViewController
             vistaIniciar.nivel = nivel
             vistaIniciar.modalidad = modalidad
+            vistaIniciar.arrDatos = arrDatos
         }
     }
     
