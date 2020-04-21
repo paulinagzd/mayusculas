@@ -24,20 +24,21 @@ class GameModeViewController: UIViewController {
     
     var modalidad : Int!
     var nivel : Int!
-    var puntos : Int!
+    var puntos : Int! = 0
     var arrDatos : NSArray!
 
     var identificador : String!
     
+    var correctoVF : Bool!
     
     override func viewDidLoad() {
        super.viewDidLoad()
         let dic = arrDatos[0] as! NSDictionary
         scModalidades.selectedSegmentIndex = modalidad - 1
         
-       viewPreguntas.isHidden = false
+        viewPreguntas.isHidden = false
         
-       if modalidad == 1 || modalidad == 2 {
+        if modalidad == 1 || modalidad == 2 {
         viewBotones.isHidden = false
         viewCampo.isHidden = true
         if modalidad == 1 {
@@ -46,10 +47,7 @@ class GameModeViewController: UIViewController {
             buttonIzquierdo.setTitle(lowerCased, for: .normal)
             buttonDerecho.setTitle(lowerCased?.capitalized, for: .normal)
         } else {
-            print("entro aqui")
-            lbPregunta.text = dic["textoCompletoMin"] as? String
-            buttonIzquierdo.setTitle("Verdadero", for: .normal)
-            buttonDerecho.setTitle("Falso", for: .normal)
+            certeza(dic: dic)
         }
        } else {
         viewCampo.isHidden = false
@@ -62,6 +60,49 @@ class GameModeViewController: UIViewController {
        // Do any additional setup after loading the view.
         
     }
+    
+    func certeza(dic: NSDictionary) {
+        buttonIzquierdo.setTitle("Verdadero", for: .normal)
+        buttonDerecho.setTitle("Falso", for: .normal)
+        if Int.random(in: 0 ... 1) == 0 {
+            lbPregunta.text = dic["textoCompletoMin"] as! String
+            if dic["respuesta"] as! String == "min" {
+                correctoVF = true
+
+            } else {
+                correctoVF = false
+            }
+        } else {
+            lbPregunta.text = dic["textoCompletoMay"] as! String
+            if dic["respuesta"] as! String == "may" {
+                correctoVF = true
+            } else {
+                correctoVF = false
+            }
+        }
+    }
+    
+    @IBAction func tapBotonIzquierdo(_ sender: Any) {
+        if modalidad == 2 {
+            if (correctoVF!) {
+                retroRespuesta(flag : true)
+            } else {
+                retroRespuesta(flag : false)
+            }
+        }
+    }
+    
+    @IBAction func tapBotonDerecho(_ sender: Any) {
+        if modalidad == 2 {
+            if (correctoVF!) {
+                retroRespuesta(flag : false)
+
+            } else {
+                retroRespuesta(flag : true)
+            }
+        }
+    }
+    
     /*
         fraseCompletada
         Evalúa la respuesta de la modalidad de completar
@@ -92,15 +133,21 @@ class GameModeViewController: UIViewController {
                                           preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            puntos += 10;
+            lbPuntos.text = "Puntos:" + String(puntos)
         }
         else {
-            let alert = UIAlertController(title: "¡Inorrecto!",
+            let alert = UIAlertController(title: "¡Incorrecto!",
                                           message: "Intenta de nuevo",
                                           preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            puntos -= 10;
+            lbPuntos.text = "Puntos:" + String(puntos)
         }
+        
     }
+    
     @IBAction func mostrarHint(_ sender: UIButton) {
         let dic = arrDatos[0] as! NSDictionary
         let hint = dic["hint"] as? String
@@ -124,9 +171,7 @@ class GameModeViewController: UIViewController {
                modalidad = 2
                viewCampo.isHidden = true
                viewBotones.isHidden = false
-               lbPregunta.text = dic["textoCompletoMin"] as? String
-               buttonIzquierdo.setTitle("Verdadero", for: .normal)
-               buttonDerecho.setTitle("Falso", for: .normal)
+               certeza(dic: dic)
            } else {
                modalidad = 3
                lbPregunta.text = dic["textoPorPalabra"] as? String
