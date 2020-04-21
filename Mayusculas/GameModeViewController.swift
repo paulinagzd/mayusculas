@@ -61,7 +61,46 @@ class GameModeViewController: UIViewController {
        // Do any additional setup after loading the view.
         
     }
-
+    /*
+        fraseCompletada
+        Evalúa la respuesta de la modalidad de completar
+     */
+    @IBAction func fraseCompletada(_ sender: UIButton) {
+        let respuesta = tfCompletar.text
+        let dic = arrDatos[0] as! NSDictionary
+        var isCorrect : Bool!
+    
+        if (respuesta == dic["resCompletar"] as? String) {
+            isCorrect = true
+        }
+        else {
+            isCorrect = false
+        }
+        retroRespuesta(flag : isCorrect)
+    }
+    
+    /*
+        retroRespuesta
+        Despliega una alerta para indicar si la respuesta es
+        correcta o incorrecta
+     */
+    func retroRespuesta(flag : Bool) {
+        if (flag) {
+            let alert = UIAlertController(title: "¡Correcto!",
+                                          message: "Excelente ortografía",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else {
+            let alert = UIAlertController(title: "¡Inorrecto!",
+                                          message: "Intenta de nuevo",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
        @IBAction func cambioModalidad(_ sender: UISegmentedControl) {
         let dic = arrDatos[0] as! NSDictionary
 
