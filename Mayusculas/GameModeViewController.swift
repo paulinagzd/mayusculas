@@ -17,6 +17,7 @@ class GameModeViewController: UIViewController {
     @IBOutlet weak var buttonIzquierdo: UIButton!
     @IBOutlet weak var buttonDerecho: UIButton!
     @IBOutlet weak var tfCompletar: UITextField!
+    @IBOutlet weak var btnInfo: UIButton!
     
     @IBOutlet weak var lbPuntos: UILabel!
     
@@ -99,6 +100,13 @@ class GameModeViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
+    }
+    @IBAction func mostrarHint(_ sender: UIButton) {
+        let dic = arrDatos[0] as! NSDictionary
+        let hint = dic["hint"] as? String
+        let alert = UIAlertController(title: "Información", message: hint, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
        @IBAction func cambioModalidad(_ sender: UISegmentedControl) {
