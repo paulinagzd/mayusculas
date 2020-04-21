@@ -14,6 +14,7 @@
 		406917A7244B80F20027E11F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406917A6244B80F20027E11F /* Assets.xcassets */; };
 		406917AA244B80F20027E11F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406917A8244B80F20027E11F /* LaunchScreen.storyboard */; };
 		406917B4244BD76B0027E11F /* ViewControllerComoJugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406917B3244BD76B0027E11F /* ViewControllerComoJugar.swift */; };
+		70B59FC7244E7515004B29EB /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B59FC6244E7515004B29EB /* GameModeViewController.swift */; };
 		D84E8C08244CFFB8008A1C86 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E8C07244CFFB8008A1C86 /* SettingsViewController.swift */; };
 		D84E8C0A244CFFCB008A1C86 /* db.plist in Resources */ = {isa = PBXBuildFile; fileRef = D84E8C09244CFFCB008A1C86 /* db.plist */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		406917A9244B80F20027E11F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		406917AB244B80F20027E11F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		406917B3244BD76B0027E11F /* ViewControllerComoJugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerComoJugar.swift; sourceTree = "<group>"; };
+		70B59FC6244E7515004B29EB /* GameModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
 		D84E8C07244CFFB8008A1C86 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D84E8C09244CFFCB008A1C86 /* db.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = db.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 				406917A8244B80F20027E11F /* LaunchScreen.storyboard */,
 				406917AB244B80F20027E11F /* Info.plist */,
 				D84E8C09244CFFCB008A1C86 /* db.plist */,
+				70B59FC6244E7515004B29EB /* GameModeViewController.swift */,
 				406917B3244BD76B0027E11F /* ViewControllerComoJugar.swift */,
 			);
 			path = Mayusculas;
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				406917A2244B80F10027E11F /* ViewController.swift in Sources */,
+				70B59FC7244E7515004B29EB /* GameModeViewController.swift in Sources */,
 				4069179E244B80F10027E11F /* AppDelegate.swift in Sources */,
 				406917B4244BD76B0027E11F /* ViewControllerComoJugar.swift in Sources */,
 				D84E8C08244CFFB8008A1C86 /* SettingsViewController.swift in Sources */,
