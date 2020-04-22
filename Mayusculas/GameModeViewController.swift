@@ -27,8 +27,7 @@ class GameModeViewController: UIViewController {
     var puntos : Int! = 0
     var arrDatos : NSArray!
 
-    var identificador : String!
-    
+    var identificadorL : String!
     var correctoVF : Bool!
     
     override func viewDidLoad() {
@@ -61,11 +60,45 @@ class GameModeViewController: UIViewController {
         
     }
     
+    /*
+        Esta función se encarga de randomizar los botones en la modalidad de
+        "Por letra", además de crear el identificador que determina cuál de
+        los botones será el de la opción correcta. Recibe el diccionario de
+        la base de datos de parámetro.
+     */
+    func porLetra(dic: NSDictionary) {
+        let lowerCased = dic["letraAPoner"] as? String
+        lbPregunta.text = dic["textPorLetra"] as? String
+        if Int.random(in: 0 ... 1) == 0 {
+            buttonIzquierdo.setTitle(lowerCased, for: .normal)
+            buttonDerecho.setTitle(lowerCased?.capitalized, for: .normal)
+            if dic["respuesta"] as! String == "min" {
+                identificadorL = "izquierda"
+            } else {
+                identificadorL = "derecha"
+            }
+        } else {
+            buttonIzquierdo.setTitle(lowerCased?.capitalized, for: .normal)
+            buttonDerecho.setTitle(lowerCased, for: .normal)
+            if dic["respuesta"] as! String == "min" {
+                identificadorL = "derecha"
+            } else {
+                identificadorL = "izquierda"
+            }
+        }
+    }
+    
+    /*
+        Esta función determina cuál de los botones en la modalidad de "Por
+        certeza" es el correcto. Se encarga de randomizar cuál pregunta
+        será desplegada: la que tiene mayúscula o no. Recibe el diccionario de
+        la base de datos de parámetro.
+     */
     func certeza(dic: NSDictionary) {
         buttonIzquierdo.setTitle("Verdadero", for: .normal)
         buttonDerecho.setTitle("Falso", for: .normal)
         if Int.random(in: 0 ... 1) == 0 {
-            lbPregunta.text = dic["textoCompletoMin"] as! String
+            lbPregunta.text = (dic["textoCompletoMin"] as! String)
             if dic["respuesta"] as! String == "min" {
                 correctoVF = true
 
@@ -73,7 +106,7 @@ class GameModeViewController: UIViewController {
                 correctoVF = false
             }
         } else {
-            lbPregunta.text = dic["textoCompletoMay"] as! String
+            lbPregunta.text = (dic["textoCompletoMay"] as! String)
             if dic["respuesta"] as! String == "may" {
                 correctoVF = true
             } else {
@@ -83,7 +116,13 @@ class GameModeViewController: UIViewController {
     }
     
     @IBAction func tapBotonIzquierdo(_ sender: Any) {
-        if modalidad == 2 {
+        if modalidad == 1 {
+            if identificadorL == "izquierda" {
+                retroRespuesta(flag: true)
+            } else {
+                retroRespuesta(flag: false)
+            }
+        } else if modalidad == 2 {
             if (correctoVF!) {
                 retroRespuesta(flag : true)
             } else {
@@ -93,7 +132,13 @@ class GameModeViewController: UIViewController {
     }
     
     @IBAction func tapBotonDerecho(_ sender: Any) {
-        if modalidad == 2 {
+        if modalidad == 1 {
+            if identificadorL == "izquierda" {
+                retroRespuesta(flag: false)
+            } else {
+                retroRespuesta(flag: true)
+            }
+        } else if modalidad == 2 {
             if (correctoVF!) {
                 retroRespuesta(flag : false)
 
@@ -142,8 +187,10 @@ class GameModeViewController: UIViewController {
                                           preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            puntos -= 10;
-            lbPuntos.text = "Puntos:" + String(puntos)
+            if puntos >= 10 {
+                puntos -= 10
+            }
+            lbPuntos.text = "Puntos: " + String(puntos)
         }
         
     }
