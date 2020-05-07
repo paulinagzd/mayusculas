@@ -31,9 +31,12 @@ class GameModeViewController: UIViewController {
     var identificadorL : String!
     var correctoVF : Bool!
     
+    var indicePregunta : Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dic = arrDatos[0] as! NSDictionary
+        indicePregunta = getPregunta()
+        let dic = arrDatos[indicePregunta] as! NSDictionary
         scModalidades.selectedSegmentIndex = modalidad - 1
         
         viewPreguntas.isHidden = false
@@ -57,10 +60,18 @@ class GameModeViewController: UIViewController {
             lbSugPalabra.text = dic["sugerenciaPalabra"] as? String
        }
 
-       title = "Nivel " + String(nivel)
-
-       // Do any additional setup after loading the view.
-        
+        title = "Nivel " + String(nivel)
+        lbPuntos.text = "Puntos:" + String(puntos)
+    }
+    
+    func getPregunta() -> Int {
+        if (nivel == 0) {
+            return Int.random(in: 0 ... 14)
+        } else if (nivel == 1) {
+            return Int.random(in: 15 ... 28)
+        } else {
+            return Int.random(in: 29 ... 33)
+        }
     }
     
     /*
@@ -104,7 +115,6 @@ class GameModeViewController: UIViewController {
             lbPregunta.text = (dic["textoCompletoMin"] as! String)
             if dic["respuesta"] as! String == "min" {
                 correctoVF = true
-
             } else {
                 correctoVF = false
             }
@@ -157,7 +167,7 @@ class GameModeViewController: UIViewController {
      */
     @IBAction func fraseCompletada(_ sender: UIButton) {
         let respuesta = tfCompletar.text
-        let dic = arrDatos[0] as! NSDictionary
+        let dic = arrDatos[indicePregunta] as! NSDictionary
         var isCorrect : Bool!
     
         if (respuesta == dic["resCompletar"] as? String) {
@@ -195,11 +205,11 @@ class GameModeViewController: UIViewController {
             }
             lbPuntos.text = "Puntos: " + String(puntos)
         }
-        
+        viewDidLoad()
     }
     
     @IBAction func mostrarHint(_ sender: UIButton) {
-        let dic = arrDatos[0] as! NSDictionary
+        let dic = arrDatos[indicePregunta] as! NSDictionary
         let hint = dic["hint"] as? String
         let alert = UIAlertController(title: "Información", message: hint, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
@@ -207,7 +217,7 @@ class GameModeViewController: UIViewController {
     }
     
     @IBAction func cambioModalidad(_ sender: UISegmentedControl) {
-        let dic = arrDatos[0] as! NSDictionary
+        let dic = arrDatos[indicePregunta] as! NSDictionary
 
         if scModalidades.selectedSegmentIndex == 0 {
             modalidad = 1

@@ -602,7 +602,7 @@
 		<key>nivel</key>
 		<integer>1</integer>
 		<key>textPorLetra</key>
-		<string>Los Franciscanos siguen el ideario de San Francisco de Asís.</string>
+		<string>Los _ranciscanos siguen el ideario de San Francisco de Asís.</string>
 		<key>letraAPoner</key>
 		<string>f</string>
 		<key>textoCompletoMay</key>
