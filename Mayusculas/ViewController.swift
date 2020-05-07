@@ -18,8 +18,9 @@ class ViewController: UIViewController, protocoloSettings {
         super.viewDidLoad()
         let path = Bundle.main.path(forResource: "db", ofType: "plist")
         arrDatos = NSArray(contentsOfFile: path!)
-        //let dato = arrDatos[0] as! NSDictionary   -- tienes que guardar el dato que estas guardando en otra variables
-        //lTest.text = dato["letraAPoner"] as? String asi accesas los valores, solo cambien lo que está dentro de las []
+        //item 0 - 14 : niv 0
+        //item 15 - 28 : niv 1
+        //item 29 - 33 : niv 2
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
