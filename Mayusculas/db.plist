@@ -24,5 +24,731 @@
 		<key>hint</key>
 		<string>Los países se escriben con mayúsculas</string>
 	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>SAT</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Tengo una cita en el _AT</string>
+		<key>letraAPoner</key>
+		<string>s</string>
+		<key>textoCompletoMay</key>
+		<string>Tengo una cita en el SAT.</string>
+		<key>textoCompletoMin</key>
+		<string>Tengo una cita en el sat.</string>
+		<key>textoPorPalabra</key>
+		<string>Tengo una cita en el ___.</string>
+		<key>sugerenciaPalabra</key>
+		<string>SAT o sat</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Las siglas se escriben en mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>IMSS</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Tengo un tío que trabaja en el _MSS.</string>
+		<key>letraAPoner</key>
+		<string>I</string>
+		<key>textoCompletoMay</key>
+		<string>Tengo un tío que trabaja en el IMSS.</string>
+		<key>textoCompletoMin</key>
+		<string>Tengo un tío que trabaja en el imss.</string>
+		<key>textoPorPalabra</key>
+		<string>Tengo un tío que trabaja en el ____.</string>
+		<key>sugerenciaPalabra</key>
+		<string>IMSS o imss</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Las sigas van en mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>ITESM</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Estudio en el _TESM.</string>
+		<key>letraAPoner</key>
+		<string>I</string>
+		<key>textoCompletoMay</key>
+		<string>Estudio en el ITESM.</string>
+		<key>textoCompletoMin</key>
+		<string>Estudio en el itesm.</string>
+		<key>textoPorPalabra</key>
+		<string>Estudio en el _____.</string>
+		<key>sugerenciaPalabra</key>
+		<string>ITESM o itesm</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Las siglas se escriben en mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Juan</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Hola, me llamo _uan, ¿y tú?</string>
+		<key>letraAPoner</key>
+		<string>j</string>
+		<key>textoCompletoMay</key>
+		<string>Hola, me llamo Juan, ¿y tú?</string>
+		<key>textoCompletoMin</key>
+		<string>Hola, me llamo juan, ¿y tú?</string>
+		<key>textoPorPalabra</key>
+		<string>Hola, me llamo ____, ¿y tú?</string>
+		<key>sugerenciaPalabra</key>
+		<string>Juan o juan</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Los nombres de las dinastías, apellidos, nombres de pila, alias y sobrenombres se escriben con mayúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Dios</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>_ios es todopoderoso</string>
+		<key>letraAPoner</key>
+		<string>d</string>
+		<key>textoCompletoMay</key>
+		<string>Dios es todopoderoso</string>
+		<key>textoCompletoMin</key>
+		<string>dios es todopoderoso</string>
+		<key>textoPorPalabra</key>
+		<string>_____ es todopoderoso</string>
+		<key>sugerenciaPalabra</key>
+		<string>Dios o dios</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Los nombres de divinidades, órdenes religiosas y festividades van en mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>V</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Me encantaría visitar _illa de Santiago.</string>
+		<key>letraAPoner</key>
+		<string>v</string>
+		<key>textoCompletoMay</key>
+		<string>Me encantaría visitar Villa de Santiago.</string>
+		<key>textoCompletoMin</key>
+		<string>Me encantaría visitar villa de Santiago.</string>
+		<key>textoPorPalabra</key>
+		<string>Me encantaría visitar _____ de Santiago.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Villa o villa</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Las calles y avenidas se escriben con mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>el</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Quisiera visitar _l Mediterráneo.</string>
+		<key>letraAPoner</key>
+		<string>e</string>
+		<key>textoCompletoMay</key>
+		<string>Quisiera visitar El Mediterráneo.</string>
+		<key>textoCompletoMin</key>
+		<string>Quisiera visitar el Mediterráneo.</string>
+		<key>textoPorPalabra</key>
+		<string>Quisiera visitar __ Mediterráneo.</string>
+		<key>sugerenciaPalabra</key>
+		<string>El o el</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Solo cuando el artículo forma parte del nombre, se escriben ambas (artículo y palabra) con mayúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>La</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Mi ciudad favorita en México es _a Paz.</string>
+		<key>letraAPoner</key>
+		<string>l</string>
+		<key>textoCompletoMay</key>
+		<string>Mi ciudad favorita en México es La Paz.</string>
+		<key>textoCompletoMin</key>
+		<string>Mi ciudad favorita en México es la Paz.</string>
+		<key>textoPorPalabra</key>
+		<string>Mi ciudad favorita en México es __ Paz.</string>
+		<key>sugerenciaPalabra</key>
+		<string>La o la</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Solo cuando el artículo forma parte del nombre, se escriben ambas (artículo y palabra) con mayúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>La</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Mi ciudad favorita en México es _a Paz.</string>
+		<key>letraAPoner</key>
+		<string>l</string>
+		<key>textoCompletoMay</key>
+		<string>Mi ciudad favorita en México es La Paz.</string>
+		<key>textoCompletoMin</key>
+		<string>Mi ciudad favorita en México es la Paz.</string>
+		<key>textoPorPalabra</key>
+		<string>Mi ciudad favorita en México es __ Paz.</string>
+		<key>sugerenciaPalabra</key>
+		<string>La o la</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Solo cuando el artículo forma parte del nombre, se escriben ambas (artículo y palabra) con mayúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>viernes</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Ya quiero que sea _iernes.</string>
+		<key>letraAPoner</key>
+		<string>v</string>
+		<key>textoCompletoMay</key>
+		<string>Ya quiero que sea Viernes.</string>
+		<key>textoCompletoMin</key>
+		<string>Ya quiero que sea viernes.</string>
+		<key>textoPorPalabra</key>
+		<string>Ya quiero que sea _______.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Viernes o viernes</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Los días de la semana, estaciones del año, y meses, se escriben con minúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>diciembre</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>La Navidad se celebra el 25 de _iciembre.</string>
+		<key>letraAPoner</key>
+		<string>d</string>
+		<key>textoCompletoMay</key>
+		<string>La Navidad se celebra el 25 de Diciembre.</string>
+		<key>textoCompletoMin</key>
+		<string>La Navidad se celebra el 25 de diciembre.</string>
+		<key>textoPorPalabra</key>
+		<string>La Navidad se celebra el 25 de __________.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Diciembre o diciembre</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Los días de la semana, estaciones del año, y meses, se escriben con minúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>otoño</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Mi estación favorita es _toño.</string>
+		<key>letraAPoner</key>
+		<string>o</string>
+		<key>textoCompletoMay</key>
+		<string>Mi estación favorita es Otoño.</string>
+		<key>textoCompletoMin</key>
+		<string>Mi estación favorita es otoño.</string>
+		<key>textoPorPalabra</key>
+		<string>Mi estación favorita es ______.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Otoño o otoño</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Los días de la semana, estaciones del año, y meses, se escriben con minúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>verano</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Extraño los días de _erano.</string>
+		<key>letraAPoner</key>
+		<string>v</string>
+		<key>textoCompletoMay</key>
+		<string>Extraño los días de Verano.</string>
+		<key>textoCompletoMin</key>
+		<string>Extraño los días de verano.</string>
+		<key>textoPorPalabra</key>
+		<string>Extraño los días de ______.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Verano o verano</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Los días de la semana, estaciones del año, y meses, se escriben con minúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>marzo</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>Mi mamá cumple años en _arzo.</string>
+		<key>letraAPoner</key>
+		<string>m</string>
+		<key>textoCompletoMay</key>
+		<string>Mi mamá cumple años en Marzo.</string>
+		<key>textoCompletoMin</key>
+		<string>Mi mamá cumple años en marzo.</string>
+		<key>textoPorPalabra</key>
+		<string>Mi mamá cumple años en _____.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Marzo o marzo</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Los días de la semana, estaciones del año, y meses, se escriben con minúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Media</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>La Edad _edia precede a la Edad Moderna.</string>
+		<key>letraAPoner</key>
+		<string>m</string>
+		<key>textoCompletoMay</key>
+		<string>La Edad Media precede a la Edad Moderna.</string>
+		<key>textoCompletoMin</key>
+		<string>La edad media precede a la edad moderna.</string>
+		<key>textoPorPalabra</key>
+		<string>La Edad _____ precede a la Edad Moderna.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Media o media</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Se usa mayúscula cuando se refiere a hechos históricos.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>media</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>La edad _edia de jubilación varía según las profesiones.</string>
+		<key>letraAPoner</key>
+		<string>m</string>
+		<key>textoCompletoMay</key>
+		<string>La Edad Media de jubilación varía según las profesiones.</string>
+		<key>textoCompletoMin</key>
+		<string>La edad media de jubilación varía según las profesiones.</string>
+		<key>textoPorPalabra</key>
+		<string>La edad ______ de jubilación varía según las profesiones.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Media o media</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Se usa mayúscula cuando se refiere a hechos históricos.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>cocas</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>Vamos por unas _ocas.</string>
+		<key>letraAPoner</key>
+		<string>c</string>
+		<key>textoCompletoMay</key>
+		<string>Vamos por unas Cocas.</string>
+		<key>textoCompletoMin</key>
+		<string>Vamos por unas cocas.</string>
+		<key>textoPorPalabra</key>
+		<string>Vamos por unas ____.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Cocas o cocas</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Los nombres cuando se refieren a marcas comerciales se escriben con mayúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Cola</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>Tengo antojo de una Coca-_ola.</string>
+		<key>letraAPoner</key>
+		<string>c</string>
+		<key>textoCompletoMay</key>
+		<string>Tengo antojo de una Coca-Cola.</string>
+		<key>textoCompletoMin</key>
+		<string>Tengo antojo de una Coca-cola.</string>
+		<key>textoPorPalabra</key>
+		<string>Tengo antojo de una Coca-____.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Cola o cola</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Los nombres cuando se refieren a marcas comerciales se escriben con mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>El</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>La capital de Egipto se llama _l Cairo</string>
+		<key>letraAPoner</key>
+		<string>e</string>
+		<key>textoCompletoMay</key>
+		<string>La capital de Egipto se llama El Cairo</string>
+		<key>textoCompletoMin</key>
+		<string>La capital de Egipto se llama el Cairo</string>
+		<key>textoPorPalabra</key>
+		<string>La capital de Egipto se llama __ Cairo</string>
+		<key>sugerenciaPalabra</key>
+		<string>El o el</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Solo cuando el artículo forma parte del nombre, se escriben ambas (artículo y palabra) con mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Av</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>El ITESM se encuentra sobre la _v. Eugenio Garza Sada.</string>
+		<key>letraAPoner</key>
+		<string>a</string>
+		<key>textoCompletoMay</key>
+		<string>El ITESM se encuentra sobre la Av. Eugenio Garza Sada.</string>
+		<key>textoCompletoMin</key>
+		<string>El ITESM se encuentra sobre la av. Eugenio Garza Sada.</string>
+		<key>textoPorPalabra</key>
+		<string>El ITESM se encuentra sobre la __. Eugenio Garza Sada.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Av o av</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Las calles y avenidas se escriben con mayúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Señor</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>¿Ya leíste el libro El _eñor de los anillos?</string>
+		<key>letraAPoner</key>
+		<string>s</string>
+		<key>textoCompletoMay</key>
+		<string>¿Ya leíste el libro El Señor de los anillos?</string>
+		<key>textoCompletoMin</key>
+		<string>¿Ya leíste el libro El señor de los anillos?</string>
+		<key>textoPorPalabra</key>
+		<string>¿Ya leíste el libro El ______ de los anillos?</string>
+		<key>sugerenciaPalabra</key>
+		<string>Señor o señor</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Únicamente la primera palabra de los títulos de obras va escrita con mayúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Sapiens</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>El nombre científico de los humanos es Homo _apiens.</string>
+		<key>letraAPoner</key>
+		<string>s</string>
+		<key>textoCompletoMay</key>
+		<string>El nombre científico de los humanos es Homo Sapiens.</string>
+		<key>textoCompletoMin</key>
+		<string>El nombre científico de los humanos es Homo sapiens.</string>
+		<key>textoPorPalabra</key>
+		<string>______ es un país con mucha diversidad.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Sapiens o sapiens</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>La primera palabra e nombres científicos de plantas o animales se escribe con mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Hibiscus</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>El nombre científico de mi flor favorita es _ibiscus rosa-sinensis.</string>
+		<key>letraAPoner</key>
+		<string>h</string>
+		<key>textoCompletoMay</key>
+		<string>El nombre científico de mi flor favorita es Hibiscus rosa-sinensis.</string>
+		<key>textoCompletoMin</key>
+		<string>El nombre científico de mi flor favorita es hibiscus rosa-sinensis.</string>
+		<key>textoPorPalabra</key>
+		<string>El nombre científico de mi flor favorita es ________ rosa-sinensis.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Hibiscus o hibiscus</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>La primera palabra e nombres científicos de plantas o animales se escribe con mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>México</string>
+		<key>nivel</key>
+		<integer>0</integer>
+		<key>textPorLetra</key>
+		<string>_éxico es un país con mucha diversidad.</string>
+		<key>letraAPoner</key>
+		<string>m</string>
+		<key>textoCompletoMay</key>
+		<string>México es un país con mucha diversidad.</string>
+		<key>textoCompletoMin</key>
+		<string>méxico es un país con mucha diversidad.</string>
+		<key>textoPorPalabra</key>
+		<string>______ es un país con mucha diversidad.</string>
+		<key>sugerenciaPalabra</key>
+		<string>México o méxico</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Los países se escriben con mayúsculas</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Estudios</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>Yo estudio en el Instituto Tecnológico y de _studios Superiores de Monterrey.</string>
+		<key>letraAPoner</key>
+		<string>e</string>
+		<key>textoCompletoMay</key>
+		<string>Yo estudio en el Instituto Tecnológico y de Estudios Superiores de Monterrey.</string>
+		<key>textoCompletoMin</key>
+		<string>Yo estudio en el Instituto tecnológico y de estudios superiores de Monterrey.</string>
+		<key>textoPorPalabra</key>
+		<string>Yo estudio en el Instituto Tecnológico y de ___________ Superiores de Monterrey.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Estudios o estudios</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Los sustantivos y adjetivos de los nombres de instituciones se escriben con mayúsculas</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Independencia</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>El 16 de septiembre celebramos el Día de la _ndependencia.</string>
+		<key>letraAPoner</key>
+		<string>i</string>
+		<key>textoCompletoMay</key>
+		<string>El 16 de septiembre celebramos el Día de la Independencia.</string>
+		<key>textoCompletoMin</key>
+		<string>El 16 de septiembre celebramos el Día de la independencia.</string>
+		<key>textoPorPalabra</key>
+		<string>El 16 de septiembre celebramos el Día de la _______________.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Independencia o independencia</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Los nombres de divinidades, órdenes religiosas y festividades van en mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Franciscanos</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>Los _ranciscanos siguen el ideario de San Francisco de Asís.</string>
+		<key>letraAPoner</key>
+		<string>f</string>
+		<key>textoCompletoMay</key>
+		<string>Los Franciscanos siguen el ideario de San Francisco de Asís.</string>
+		<key>textoCompletoMin</key>
+		<string>Los franciscanos siguen el ideario de San Francisco de Asís.</string>
+		<key>textoPorPalabra</key>
+		<string>Los _______________ siguen el ideario de San Francisco de Asís.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Franciscanos o franciscanos</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Los nombres de divinidades, órdenes religiosas y festividades van en mayúscula</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Borbones</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>Los _orbones son una importante familia francesa.</string>
+		<key>letraAPoner</key>
+		<string>b</string>
+		<key>textoCompletoMay</key>
+		<string>Los Borbones son una importante familia francesa.</string>
+		<key>textoCompletoMin</key>
+		<string>Los borbones son una importante familia francesa.</string>
+		<key>textoPorPalabra</key>
+		<string>______ es un país con mucha diversidad.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Borbones o borbones</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Los nombres de las dinastías, apellidos, nombres de pila, alias y sobrenombres se escriben con mayúscula.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>estado</string>
+		<key>nivel</key>
+		<integer>2</integer>
+		<key>textPorLetra</key>
+		<string>Es muy bonito el _stado de Nuevo León.</string>
+		<key>letraAPoner</key>
+		<string>e</string>
+		<key>textoCompletoMay</key>
+		<string>Es muy bonito el Estado de Nuevo León.</string>
+		<key>textoCompletoMin</key>
+		<string>Es muy bonito el estado de Nuevo León.</string>
+		<key>textoPorPalabra</key>
+		<string>Es muy bonito el _______ de Nuevo León.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Estado o estado</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>Hay palabras sueltas que van escritas con mayúsculas dependiendo de su contexto.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>Estado</string>
+		<key>nivel</key>
+		<integer>1</integer>
+		<key>textPorLetra</key>
+		<string>Un _stado es una organización política.</string>
+		<key>letraAPoner</key>
+		<string>e</string>
+		<key>textoCompletoMay</key>
+		<string>Un Estado es una organización política.</string>
+		<key>textoCompletoMin</key>
+		<string>Un estado es una organización política.</string>
+		<key>textoPorPalabra</key>
+		<string>Un ________ es una organización política.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Estado o estado</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Hay palabras sueltas que van escritas con mayúsculas dependiendo de su contexto.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>V</string>
+		<key>nivel</key>
+		<integer>2</integer>
+		<key>textPorLetra</key>
+		<string>El _ representa 5 en números romanos.</string>
+		<key>letraAPoner</key>
+		<string>v</string>
+		<key>textoCompletoMay</key>
+		<string>El V representa 5 en números romanos.</string>
+		<key>textoCompletoMin</key>
+		<string>El v representa 5 en números romanos.</string>
+		<key>textoPorPalabra</key>
+		<string>El _ representa 5 en números romanos.</string>
+		<key>sugerenciaPalabra</key>
+		<string>V o v</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>Los números romanos van en mayúsculas</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>A</string>
+		<key>nivel</key>
+		<integer>2</integer>
+		<key>textPorLetra</key>
+		<string>Un ejemplo de signo de fuego es _ries.</string>
+		<key>letraAPoner</key>
+		<string>a</string>
+		<key>textoCompletoMay</key>
+		<string>Un ejemplo de signo de fuego es Aries.</string>
+		<key>textoCompletoMin</key>
+		<string>Un ejemplo de signo de fuego es aries.</string>
+		<key>textoPorPalabra</key>
+		<string>Un ejemplo de signo de fuego es ____.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Aries o aries</string>
+		<key>respuesta</key>
+		<string>may</string>
+		<key>hint</key>
+		<string>os signos del zodiaco se escriben con mayúscula o minúscula dependiendo de su uso.</string>
+	</dict>
+	<dict>
+		<key>resCompletar</key>
+		<string>leo</string>
+		<key>nivel</key>
+		<integer>2</integer>
+		<key>textPorLetra</key>
+		<string>Mi hijo menor es _eo.</string>
+		<key>letraAPoner</key>
+		<string>l</string>
+		<key>textoCompletoMay</key>
+		<string>Mi hijo menor es Leo.</string>
+		<key>textoCompletoMin</key>
+		<string>Mi hijo menor es leo.</string>
+		<key>textoPorPalabra</key>
+		<string>Mi hijo menor es ___.</string>
+		<key>sugerenciaPalabra</key>
+		<string>Leo o leo</string>
+		<key>respuesta</key>
+		<string>min</string>
+		<key>hint</key>
+		<string>os signos del zodiaco se escriben con mayúscula o minúscula dependiendo de su uso.</string>
+	</dict>
 </array>
 </plist>
