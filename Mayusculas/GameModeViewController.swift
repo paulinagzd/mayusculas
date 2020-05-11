@@ -65,6 +65,10 @@ class GameModeViewController: UIViewController {
         title = "Nivel " + String(nivel)
         lbPuntos.text = "Puntos:" + String(puntos)
         print(String(pregunta))
+        if pregunta > 9 {
+            pregunta = 0
+            puntos = 0
+        }
     }
     
     func getPregunta() -> Int {
