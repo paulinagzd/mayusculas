@@ -19,7 +19,7 @@ class ScoreViewController: UIViewController, MFMailComposeViewControllerDelegate
         self.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false
         self.navigationController!.interactivePopGestureRecognizer!.isEnabled = false;
         
-        lbPuntaje.text = String(puntos!) + "puntos"
+        lbPuntaje.text = String(puntos!) + " " + "puntos"
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
