@@ -44,7 +44,7 @@ class GameModeViewController: UIViewController {
             indicePregunta = setPreguntas.first
             setPreguntas.remove(indicePregunta)
         }
-        print("la pregunta es:" + String(indicePregunta!))
+        // print("la pregunta es:" + String(indicePregunta!))
         let dic = arrDatos[indicePregunta] as! NSDictionary
         scModalidades.selectedSegmentIndex = modalidad - 1
         
@@ -55,10 +55,7 @@ class GameModeViewController: UIViewController {
             viewCampo.isHidden = true
             lbSugPalabra.isHidden = true
             if modalidad == 1 {
-                lbPregunta.text = dic["textPorLetra"] as? String
-                let lowerCased = dic["letraAPoner"] as? String
-                buttonIzquierdo.setTitle(lowerCased, for: .normal)
-                buttonDerecho.setTitle(lowerCased?.capitalized, for: .normal)
+                porLetra(dic: dic)
             } else {
                 certeza(dic: dic)
             }
@@ -71,7 +68,7 @@ class GameModeViewController: UIViewController {
 
         title = "Nivel " + String(nivel)
         lbPuntos.text = "Puntos:" + String(puntos)
-        print(String(pregunta))
+        // print(String(pregunta))
         if pregunta > 9 {
             pregunta = 0
             puntos = 0
@@ -86,7 +83,12 @@ class GameModeViewController: UIViewController {
     func porLetra(dic: NSDictionary) {
         let lowerCased = dic["letraAPoner"] as? String
         lbPregunta.text = dic["textPorLetra"] as? String
-        if Int.random(in: 0 ... 1) == 0 {
+        let dr = dic["respuesta"] as! String
+        print(dr)
+        let rand = Int.random(in: 0 ... 1)
+        if rand == 0 {
+            print("random")
+            print(String(rand))
             buttonIzquierdo.setTitle(lowerCased, for: .normal)
             buttonDerecho.setTitle(lowerCased?.capitalized, for: .normal)
             if dic["respuesta"] as! String == "min" {
@@ -95,6 +97,8 @@ class GameModeViewController: UIViewController {
                 identificadorL = "derecha"
             }
         } else {
+            print("random")
+            print(String(rand))
             buttonIzquierdo.setTitle(lowerCased?.capitalized, for: .normal)
             buttonDerecho.setTitle(lowerCased, for: .normal)
             if dic["respuesta"] as! String == "min" {
