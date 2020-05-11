@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4026DBB724676B3E00F923B4 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026DBB624676B3E00F923B4 /* ScoreViewController.swift */; };
+		4026DBBA2468EEAD00F923B4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4026DBB92468EEAD00F923B4 /* MessageUI.framework */; };
 		4069179E244B80F10027E11F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069179D244B80F10027E11F /* AppDelegate.swift */; };
 		406917A0244B80F10027E11F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069179F244B80F10027E11F /* SceneDelegate.swift */; };
 		406917A2244B80F10027E11F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406917A1244B80F10027E11F /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4026DBB624676B3E00F923B4 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		4026DBB92468EEAD00F923B4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4069179A244B80F10027E11F /* Mayusculas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mayusculas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4069179D244B80F10027E11F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4069179F244B80F10027E11F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,17 +45,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4026DBBA2468EEAD00F923B4 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4026DBB82468EEAD00F923B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4026DBB92468EEAD00F923B4 /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		40691791244B80F10027E11F = {
 			isa = PBXGroup;
 			children = (
 				4069179C244B80F10027E11F /* Mayusculas */,
 				4069179B244B80F10027E11F /* Products */,
+				4026DBB82468EEAD00F923B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +84,7 @@
 				4069179F244B80F10027E11F /* SceneDelegate.swift */,
 				406917A1244B80F10027E11F /* ViewController.swift */,
 				406917A3244B80F10027E11F /* Main.storyboard */,
+				4026DBB624676B3E00F923B4 /* ScoreViewController.swift */,
 				D84E8C07244CFFB8008A1C86 /* SettingsViewController.swift */,
 				406917A6244B80F20027E11F /* Assets.xcassets */,
 				406917A8244B80F20027E11F /* LaunchScreen.storyboard */,
@@ -154,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70F634B42468D27C00AF7B8B /* ScoreViewController.swift in Sources */,
+				4026DBB724676B3E00F923B4 /* ScoreViewController.swift in Sources */,
 				406917A2244B80F10027E11F /* ViewController.swift in Sources */,
 				70B59FC7244E7515004B29EB /* GameModeViewController.swift in Sources */,
 				4069179E244B80F10027E11F /* AppDelegate.swift in Sources */,

@@ -12,16 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVX-ph-P9b">
-                                <rect key="frame" x="29" y="181" width="317" height="304"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVX-ph-P9b">
+                                <rect key="frame" x="29" y="137" width="317" height="328"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPI-fC-VfV">
-                                        <rect key="frame" x="48" y="90" width="220" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPI-fC-VfV">
+                                        <rect key="frame" x="48" y="94" width="188" height="43"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Iniciar">
@@ -32,9 +30,8 @@
                                             <segue destination="ElW-Ls-hEK" kind="show" identifier="iniciar" id="yQg-o1-JKz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EE-c5-Tt8">
-                                        <rect key="frame" x="48" y="136" width="220" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EE-c5-Tt8">
+                                        <rect key="frame" x="48" y="145" width="188" height="43"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Seleccionar nivel">
@@ -44,16 +41,14 @@
                                             <segue destination="wXb-0v-zbH" kind="show" identifier="niveles" id="S6k-hh-Bil"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mayúsculas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My0-sg-utN">
-                                        <rect key="frame" x="64" y="31" width="188" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mayúsculas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My0-sg-utN">
+                                        <rect key="frame" x="64" y="31" width="188" height="43"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0M-hk-lrk">
-                                        <rect key="frame" x="48" y="182" width="220" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0M-hk-lrk">
+                                        <rect key="frame" x="48" y="196" width="188" height="43"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Seleccionar modalidad">
@@ -63,9 +58,8 @@
                                             <segue destination="wdb-PY-5G9" kind="show" identifier="modalidades" id="hFs-M3-Mmq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z04-9O-QG5">
-                                        <rect key="frame" x="48" y="228" width="220" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z04-9O-QG5">
+                                        <rect key="frame" x="48" y="247" width="188" height="43"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Cómo jugar">
@@ -77,9 +71,41 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.18852880599999999" green="0.26429054140000002" blue="0.96476012470000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="r0M-hk-lrk" firstAttribute="height" secondItem="My0-sg-utN" secondAttribute="height" id="1kb-EC-hIY"/>
+                                    <constraint firstItem="r0M-hk-lrk" firstAttribute="width" secondItem="My0-sg-utN" secondAttribute="width" id="28V-Xc-hFH"/>
+                                    <constraint firstItem="4EE-c5-Tt8" firstAttribute="leading" secondItem="gVX-ph-P9b" secondAttribute="leading" constant="48" id="8rL-3G-hgP"/>
+                                    <constraint firstItem="sPI-fC-VfV" firstAttribute="width" secondItem="My0-sg-utN" secondAttribute="width" id="LEV-iL-MAJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="z04-9O-QG5" secondAttribute="bottom" constant="38" id="LFX-kV-fcN"/>
+                                    <constraint firstItem="z04-9O-QG5" firstAttribute="height" secondItem="My0-sg-utN" secondAttribute="height" id="MRH-ea-1Or"/>
+                                    <constraint firstAttribute="trailing" secondItem="4EE-c5-Tt8" secondAttribute="trailing" constant="49" id="MbP-gN-vgn"/>
+                                    <constraint firstItem="4EE-c5-Tt8" firstAttribute="width" secondItem="My0-sg-utN" secondAttribute="width" id="TeL-HY-kS9"/>
+                                    <constraint firstAttribute="trailing" secondItem="sPI-fC-VfV" secondAttribute="trailing" constant="49" id="WDj-bb-qCH"/>
+                                    <constraint firstItem="z04-9O-QG5" firstAttribute="leading" secondItem="gVX-ph-P9b" secondAttribute="leading" constant="48" id="XFq-Uw-F6z"/>
+                                    <constraint firstItem="4EE-c5-Tt8" firstAttribute="height" secondItem="My0-sg-utN" secondAttribute="height" id="YXR-OH-q4G"/>
+                                    <constraint firstAttribute="trailing" secondItem="My0-sg-utN" secondAttribute="trailing" constant="65" id="YhY-hh-EaL"/>
+                                    <constraint firstItem="z04-9O-QG5" firstAttribute="top" secondItem="r0M-hk-lrk" secondAttribute="bottom" constant="8" id="cBs-hY-iBo"/>
+                                    <constraint firstItem="4EE-c5-Tt8" firstAttribute="top" secondItem="sPI-fC-VfV" secondAttribute="bottom" constant="8" id="caU-g1-fio"/>
+                                    <constraint firstItem="r0M-hk-lrk" firstAttribute="leading" secondItem="gVX-ph-P9b" secondAttribute="leading" constant="48" id="cjE-7G-4BT"/>
+                                    <constraint firstItem="My0-sg-utN" firstAttribute="top" secondItem="gVX-ph-P9b" secondAttribute="top" constant="31" id="iUs-fo-auH"/>
+                                    <constraint firstItem="sPI-fC-VfV" firstAttribute="height" secondItem="My0-sg-utN" secondAttribute="height" id="jWF-TD-ZBy"/>
+                                    <constraint firstAttribute="trailing" secondItem="r0M-hk-lrk" secondAttribute="trailing" constant="49" id="kc4-B1-iMo"/>
+                                    <constraint firstItem="z04-9O-QG5" firstAttribute="width" secondItem="My0-sg-utN" secondAttribute="width" id="qk9-8y-Kmc"/>
+                                    <constraint firstItem="sPI-fC-VfV" firstAttribute="top" secondItem="My0-sg-utN" secondAttribute="bottom" constant="20" id="uHk-8x-RvG"/>
+                                    <constraint firstAttribute="trailing" secondItem="z04-9O-QG5" secondAttribute="trailing" constant="49" id="w8V-V0-Sro"/>
+                                    <constraint firstItem="sPI-fC-VfV" firstAttribute="leading" secondItem="gVX-ph-P9b" secondAttribute="leading" constant="48" id="wxp-EY-PQf"/>
+                                    <constraint firstItem="My0-sg-utN" firstAttribute="leading" secondItem="gVX-ph-P9b" secondAttribute="leading" constant="64" id="x6P-MQ-22Y"/>
+                                    <constraint firstItem="r0M-hk-lrk" firstAttribute="top" secondItem="4EE-c5-Tt8" secondAttribute="bottom" constant="8" id="xRu-uI-YZZ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gVX-ph-P9b" secondAttribute="bottom" constant="182" id="7Ev-2Y-DVt"/>
+                            <constraint firstItem="gVX-ph-P9b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="KBh-LA-CpU"/>
+                            <constraint firstItem="gVX-ph-P9b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="f3p-3f-xsF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gVX-ph-P9b" secondAttribute="trailing" constant="29" id="ghe-d0-aBH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Menú" id="vYr-q6-pXc"/>
@@ -93,7 +119,7 @@
             <objects>
                 <viewController id="ElW-Ls-hEK" customClass="GameModeViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pnc-tB-gza">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FU5-Ax-5tF">
@@ -192,7 +218,7 @@
                                         </state>
                                         <connections>
                                             <action selector="tapBotonDerecho:" destination="ElW-Ls-hEK" eventType="touchUpInside" id="EP7-xK-QbK"/>
-                                            <segue destination="RNV-g0-5zg" kind="presentation" id="loV-aZ-cYq"/>
+                                            <segue destination="RNV-g0-5zg" kind="show" id="loV-aZ-cYq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78J-c7-fAa">
@@ -205,7 +231,7 @@
                                         </state>
                                         <connections>
                                             <action selector="tapBotonIzquierdo:" destination="ElW-Ls-hEK" eventType="touchUpInside" id="eAC-13-9F6"/>
-                                            <segue destination="RNV-g0-5zg" kind="presentation" id="ePf-86-ut4"/>
+                                            <segue destination="RNV-g0-5zg" kind="show" id="ePf-86-ut4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -246,12 +272,11 @@
             <objects>
                 <viewController id="wdb-PY-5G9" customClass="SettingsViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Mw-og-dEt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ldd-nn-de3">
-                                <rect key="frame" x="29" y="208" width="317" height="251"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldd-nn-de3">
+                                <rect key="frame" x="29" y="164" width="317" height="275"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9b-8z-0Ca">
                                         <rect key="frame" x="59" y="90" width="198" height="38"/>
@@ -290,17 +315,17 @@
                                             <action selector="completar:" destination="wdb-PY-5G9" eventType="touchUpInside" id="Fum-iw-TXr"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elige tu modalidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE3-I1-Sgt">
-                                        <rect key="frame" x="8" y="32" width="302" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(se puede cambiar durante el juego)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPN-d0-pDX">
                                         <rect key="frame" x="9" y="54" width="301" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elige tu modalidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE3-I1-Sgt">
+                                        <rect key="frame" x="8" y="32" width="302" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -309,6 +334,12 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ldd-nn-de3" firstAttribute="top" secondItem="Xqn-bF-CaI" secondAttribute="top" constant="164" id="29a-Fq-4Mm"/>
+                            <constraint firstItem="Xqn-bF-CaI" firstAttribute="trailing" secondItem="ldd-nn-de3" secondAttribute="trailing" constant="29" id="7xi-TU-1Qk"/>
+                            <constraint firstItem="Xqn-bF-CaI" firstAttribute="bottom" secondItem="ldd-nn-de3" secondAttribute="bottom" constant="208" id="GJp-uY-7dq"/>
+                            <constraint firstItem="ldd-nn-de3" firstAttribute="leading" secondItem="Xqn-bF-CaI" secondAttribute="leading" constant="29" id="tRh-2Z-5gw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xqn-bF-CaI"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Iq-3j-5jq"/>
@@ -322,16 +353,14 @@
             <objects>
                 <viewController id="wXb-0v-zbH" customClass="SettingsViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MD9-LW-oQp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cU4-DV-8Lo">
-                                <rect key="frame" x="29" y="208" width="317" height="251"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cU4-DV-8Lo">
+                                <rect key="frame" x="29" y="164" width="317" height="275"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6D-K3-QbC">
-                                        <rect key="frame" x="59" y="90" width="198" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6D-K3-QbC">
+                                        <rect key="frame" x="59" y="95.5" width="205" height="44"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Principiante">
@@ -341,9 +370,8 @@
                                             <action selector="principiante:" destination="wXb-0v-zbH" eventType="touchUpInside" id="oaI-nB-Ol5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9A-kf-8Es">
-                                        <rect key="frame" x="59" y="136" width="198" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9A-kf-8Es">
+                                        <rect key="frame" x="59" y="147.5" width="205" height="44.5"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Intermedio">
@@ -354,9 +382,8 @@
                                             <action selector="intermedio:" destination="wXb-0v-zbH" eventType="touchUpInside" id="Huk-tA-8kJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17E-SC-I0a">
-                                        <rect key="frame" x="59" y="182" width="198" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17E-SC-I0a">
+                                        <rect key="frame" x="59" y="200" width="205" height="44"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Avanzado">
@@ -366,18 +393,44 @@
                                             <action selector="avanzado:" destination="wXb-0v-zbH" eventType="touchUpInside" id="qRN-AL-oWr"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elige tu nivel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH8-AC-KFY">
-                                        <rect key="frame" x="64" y="31" width="205" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige tu nivel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH8-AC-KFY">
+                                        <rect key="frame" x="64" y="31" width="205" height="44.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.18852880599999999" green="0.26429054140000002" blue="0.96476012470000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Z6D-K3-QbC" firstAttribute="top" secondItem="dH8-AC-KFY" secondAttribute="bottom" constant="20" id="2KI-sy-xg2"/>
+                                    <constraint firstItem="S9A-kf-8Es" firstAttribute="top" secondItem="Z6D-K3-QbC" secondAttribute="bottom" constant="8" id="2kx-Lc-3Uu"/>
+                                    <constraint firstItem="S9A-kf-8Es" firstAttribute="leading" secondItem="cU4-DV-8Lo" secondAttribute="leading" constant="59" id="5GP-sT-UNv"/>
+                                    <constraint firstItem="17E-SC-I0a" firstAttribute="width" secondItem="dH8-AC-KFY" secondAttribute="width" id="6ly-u5-Sp7"/>
+                                    <constraint firstItem="Z6D-K3-QbC" firstAttribute="leading" secondItem="cU4-DV-8Lo" secondAttribute="leading" constant="59" id="BDK-nj-BDV"/>
+                                    <constraint firstAttribute="trailing" secondItem="dH8-AC-KFY" secondAttribute="trailing" constant="48" id="CCh-md-0kn"/>
+                                    <constraint firstItem="dH8-AC-KFY" firstAttribute="top" secondItem="cU4-DV-8Lo" secondAttribute="top" constant="31" id="CjH-Ji-uuV"/>
+                                    <constraint firstItem="Z6D-K3-QbC" firstAttribute="width" secondItem="dH8-AC-KFY" secondAttribute="width" id="Ckp-rS-reA"/>
+                                    <constraint firstItem="S9A-kf-8Es" firstAttribute="width" secondItem="dH8-AC-KFY" secondAttribute="width" id="GyP-P4-msR"/>
+                                    <constraint firstItem="17E-SC-I0a" firstAttribute="top" secondItem="S9A-kf-8Es" secondAttribute="bottom" constant="8" id="HUf-po-Bfw"/>
+                                    <constraint firstItem="dH8-AC-KFY" firstAttribute="leading" secondItem="cU4-DV-8Lo" secondAttribute="leading" constant="64" id="M55-gl-1Dw"/>
+                                    <constraint firstAttribute="trailing" secondItem="17E-SC-I0a" secondAttribute="trailing" constant="60" id="PaM-UQ-UJi"/>
+                                    <constraint firstAttribute="trailing" secondItem="S9A-kf-8Es" secondAttribute="trailing" constant="60" id="b93-yb-hcd"/>
+                                    <constraint firstAttribute="bottom" secondItem="17E-SC-I0a" secondAttribute="bottom" constant="31" id="duE-sk-v1J"/>
+                                    <constraint firstItem="S9A-kf-8Es" firstAttribute="height" secondItem="dH8-AC-KFY" secondAttribute="height" id="jiw-SA-2mO"/>
+                                    <constraint firstItem="Z6D-K3-QbC" firstAttribute="height" secondItem="dH8-AC-KFY" secondAttribute="height" id="nar-8j-g9t"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z6D-K3-QbC" secondAttribute="trailing" constant="60" id="osY-8k-lHj"/>
+                                    <constraint firstItem="17E-SC-I0a" firstAttribute="height" secondItem="dH8-AC-KFY" secondAttribute="height" id="pbw-Vy-Bzn"/>
+                                    <constraint firstItem="17E-SC-I0a" firstAttribute="leading" secondItem="cU4-DV-8Lo" secondAttribute="leading" constant="59" id="y1j-kb-yuE"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cU4-DV-8Lo" firstAttribute="leading" secondItem="6Cs-nV-xSR" secondAttribute="leading" constant="29" id="D14-KQ-wEZ"/>
+                            <constraint firstItem="6Cs-nV-xSR" firstAttribute="trailing" secondItem="cU4-DV-8Lo" secondAttribute="trailing" constant="29" id="I0N-Yg-Yqo"/>
+                            <constraint firstItem="6Cs-nV-xSR" firstAttribute="bottom" secondItem="cU4-DV-8Lo" secondAttribute="bottom" constant="208" id="JsQ-d5-I6Y"/>
+                            <constraint firstItem="cU4-DV-8Lo" firstAttribute="top" secondItem="6Cs-nV-xSR" secondAttribute="top" constant="164" id="agJ-IV-TNz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Cs-nV-xSR"/>
                     </view>
                     <navigationItem key="navigationItem" id="6M2-io-XTH"/>
@@ -407,7 +460,7 @@
             <objects>
                 <viewController id="xUi-zq-aVm" customClass="ViewControllerComoJugar" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4zh-of-FU2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soW-HF-qxV">
@@ -497,36 +550,6 @@
                                 <rect key="frame" x="157" y="314" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbJ-ZP-Vy8">
-                                <rect key="frame" x="157" y="314" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La _______ da vueltas alrededor del Sol." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU7-mX-vuS">
-                                        <rect key="frame" x="8" y="38" width="301" height="174"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(¿&quot;Tierra&quot; ó &quot;tierra&quot;?)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFC-aa-mbo">
-                                        <rect key="frame" x="26" y="166" width="264" height="77"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.18852880599999999" green="0.26429054140000002" blue="0.96476012470000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="EVA-rf-9py">
-                                <rect key="frame" x="157" y="314" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Por letra"/>
-                                    <segment title="Por certeza"/>
-                                    <segment title="Completar"/>
-                                </segments>
-                            </segmentedControl>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzY-q5-U0y">
                                 <rect key="frame" x="29" y="249" width="317" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -558,6 +581,9 @@
                                 <state key="normal" title="Regresar al menú">
                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="mainMenu" id="ZvH-Ll-CTB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrz-2W-v1h">
                                 <rect key="frame" x="108" y="452" width="157" height="37"/>
@@ -583,6 +609,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qbw-1r-ctM"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M2x-hY-iUD"/>
                     <connections>
                         <outlet property="lbPuntaje" destination="VOT-Tu-j6g" id="Rlr-9m-aJb"/>
                     </connections>
@@ -593,6 +620,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="loV-aZ-cYq"/>
+        <segue reference="yQg-o1-JKz"/>
+        <segue reference="ePf-86-ut4"/>
+        <segue reference="ZvH-Ll-CTB"/>
     </inferredMetricsTieBreakers>
 </document>

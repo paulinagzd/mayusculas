@@ -23,44 +23,62 @@ class ScoreViewController: UIViewController, MFMailComposeViewControllerDelegate
     
 
     @IBAction func sendEmail(_ sender: Any) {
-        let mailComposeViewController = configureMailController()
-        if MFMailComposeViewController.canSendMail() {
-            self.present(mailComposeViewController, animated: true, completion: nil)
-        } else {
-            showMailError()
-        }
+        showMailComposer()
     }
     
-    func configureMailController() -> MFMailComposeViewController {
+    func showMailComposer() {
+        guard MFMailComposeViewController.canSendMail() else {
+            return
+        }
         let mailComposerVC = MFMailComposeViewController()
-        
         mailComposerVC.mailComposeDelegate = self
-        mailComposerVC.setToRecipients(["paulinagdavalos@gmail.com"])
+        mailComposerVC.setToRecipients(["address@example.com"])
         mailComposerVC.setSubject("Puntaje Mayúsculas")
         mailComposerVC.setMessageBody("¡Felicidades! Obtuviste \(String(puntos)) puntos en el juego de mayúsculas", isHTML: false)
-        
-        return mailComposerVC
-    }
-    
-    func showMailError() {
-        let sendMailErrorAlert = UIAlertController(title: "Error al mandar correo", message: "Su dispositivo no pudo mandar el correo", preferredStyle: .alert)
-        let dismiss = UIAlertAction(title: "OK", style: .default, handler: nil)
-        sendMailErrorAlert.addAction(dismiss)
-        self.present(sendMailErrorAlert, animated: true, completion: nil)
-    }
-    
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true, completion: nil)
-    }
-    
-    /*
-    // MARK: - Navigation
+        // self.present(mailComposerVC, animated: true, completion: nil)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        present(mailComposerVC, animated: true)
     }
-    */
+    
+       // MARK: - Navigation
+
+       // In a storyboard-based application, you will often want to do a little preparation before navigation
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           // Get the new view controller using segue.destination.
+           // Pass the selected object to the new view controller.
+        if segue.identifier == "mainMenu" {
+            _ = segue.destination as! ViewController
+        }
+            
+       }
+    
 
 }
+    
+    extension ViewController: MFMailComposeViewControllerDelegate {
+        
+        func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+
+        if let _ = error {
+            //Show error alert
+            controller.dismiss(animated: true)
+            return
+        }
+        
+        switch result {
+        case .cancelled:
+            print("Cancelled")
+        case .failed:
+            print("Failed to send")
+        case .saved:
+            print("Saved")
+        case .sent:
+            print("Email Sent")
+        @unknown default:
+            break
+        }
+        
+        controller.dismiss(animated: true)
+    }
+}
+
