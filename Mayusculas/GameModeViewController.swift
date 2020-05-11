@@ -26,6 +26,7 @@ class GameModeViewController: UIViewController {
     var modalidad : Int!
     var nivel : Int!
     var puntos : Int! = 0
+    var pregunta : Int! = 0
     var arrDatos : NSArray!
 
     var identificadorL : String!
@@ -62,6 +63,7 @@ class GameModeViewController: UIViewController {
 
         title = "Nivel " + String(nivel)
         lbPuntos.text = "Puntos:" + String(puntos)
+        print(String(pregunta))
     }
     
     func getPregunta() -> Int {
@@ -205,6 +207,7 @@ class GameModeViewController: UIViewController {
             }
             lbPuntos.text = "Puntos: " + String(puntos)
         }
+        pregunta = pregunta + 1
         viewDidLoad()
     }
     
@@ -243,4 +246,18 @@ class GameModeViewController: UIViewController {
         }
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if (sender as! UIButton) == buttonIzquierdo || (sender as! UIButton) == buttonDerecho {
+            print("entro")
+            if pregunta == 2 {
+                return true
+            }
+        }
+        return false
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vistaPuntaje = segue.destination as! ScoreViewController
+        vistaPuntaje.puntos = puntos
+    }
 }
