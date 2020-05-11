@@ -14,6 +14,7 @@ class ViewController: UIViewController, protocoloSettings {
     var nivel: Int = 1 // 1 = principiante,  2 = intermedio,  3 = avanzado
     var modalidad: Int = 1 // 1 = por letra,  2 = por certeza (VoF),  3 = completar
     var preguntas = Set<Int>()
+    var reglas = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,11 @@ class ViewController: UIViewController, protocoloSettings {
             preguntas.insert(value)
         }
         print(preguntas)
+        // Llenar arreglo de reglas a exportar
+        for item in preguntas {
+            let dic = arrDatos[item] as! NSDictionary
+            reglas.append((dic["hint"] as? String)!)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,6 +68,8 @@ class ViewController: UIViewController, protocoloSettings {
             vistaIniciar.nivel = nivel
             vistaIniciar.modalidad = modalidad
             vistaIniciar.arrDatos = arrDatos
+            vistaIniciar.reglasExpotar = reglas
+            print(reglas)
         }
     }
     
