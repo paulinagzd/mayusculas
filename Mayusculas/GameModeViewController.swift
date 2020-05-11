@@ -33,6 +33,7 @@ class GameModeViewController: UIViewController {
     var correctoVF : Bool!
     
     var indicePregunta : Int!
+    var termina : Bool! = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -195,6 +196,9 @@ class GameModeViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             puntos += 10;
             lbPuntos.text = "Puntos:" + String(puntos)
+            if(pregunta == 9) {
+                termina = true;
+            }
         }
         else {
             let alert = UIAlertController(title: "¡Incorrecto!",
@@ -247,13 +251,7 @@ class GameModeViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if (sender as! UIButton) == buttonIzquierdo || (sender as! UIButton) == buttonDerecho {
-            print("entro")
-            if pregunta == 9 {
-                return true
-            }
-        }
-        return false
+        return termina
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
