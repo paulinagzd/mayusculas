@@ -21,7 +21,10 @@ class ScoreViewController: UIViewController, MFMailComposeViewControllerDelegate
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func returnMenu(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     @IBAction func sendEmail(_ sender: Any) {
         let mailComposeViewController = configureMailController()
         if MFMailComposeViewController.canSendMail() {

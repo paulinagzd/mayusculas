@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CuF-3c-j7t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CuF-3c-j7t">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -192,7 +192,7 @@
                                         </state>
                                         <connections>
                                             <action selector="tapBotonDerecho:" destination="ElW-Ls-hEK" eventType="touchUpInside" id="EP7-xK-QbK"/>
-                                            <segue destination="RNV-g0-5zg" kind="presentation" id="loV-aZ-cYq"/>
+                                            <segue destination="RNV-g0-5zg" kind="show" id="loV-aZ-cYq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78J-c7-fAa">
@@ -205,7 +205,7 @@
                                         </state>
                                         <connections>
                                             <action selector="tapBotonIzquierdo:" destination="ElW-Ls-hEK" eventType="touchUpInside" id="eAC-13-9F6"/>
-                                            <segue destination="RNV-g0-5zg" kind="presentation" id="ePf-86-ut4"/>
+                                            <segue destination="RNV-g0-5zg" kind="show" id="ePf-86-ut4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -490,7 +490,7 @@
             <objects>
                 <viewController id="RNV-g0-5zg" customClass="ScoreViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DOy-wf-w4e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnH-Vb-IGo">
@@ -558,6 +558,9 @@
                                 <state key="normal" title="Regresar al menú">
                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="returnMenu:" destination="RNV-g0-5zg" eventType="touchUpInside" id="vbr-3F-prS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrz-2W-v1h">
                                 <rect key="frame" x="108" y="452" width="157" height="37"/>
@@ -583,6 +586,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qbw-1r-ctM"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UxB-Dj-1mA"/>
                     <connections>
                         <outlet property="lbPuntaje" destination="VOT-Tu-j6g" id="Rlr-9m-aJb"/>
                     </connections>
