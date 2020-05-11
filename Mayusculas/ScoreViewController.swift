@@ -13,12 +13,13 @@ class ScoreViewController: UIViewController, MFMailComposeViewControllerDelegate
     @IBOutlet weak var lbPuntaje: UILabel!
     
     var puntos : Int!
+    var reglas = [String]()
     
     override func viewDidLoad() {
         self.navigationItem.hidesBackButton = true
         self.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false
         self.navigationController!.interactivePopGestureRecognizer!.isEnabled = false;
-        
+        print(reglas)
         lbPuntaje.text = String(puntos!) + " " + "puntos"
         super.viewDidLoad()
         // Do any additional setup after loading the view.

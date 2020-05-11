@@ -36,6 +36,7 @@ class GameModeViewController: UIViewController {
     var termina : Bool! = false
     
     var setPreguntas = Set<Int>()
+    var reglasExpotar = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -253,5 +254,6 @@ class GameModeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vistaPuntaje = segue.destination as! ScoreViewController
         vistaPuntaje.puntos = puntos + 10
+        vistaPuntaje.reglas = reglasExpotar
     }
 }
