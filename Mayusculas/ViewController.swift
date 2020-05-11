@@ -25,7 +25,16 @@ class ViewController: UIViewController, protocoloSettings {
     }
     
     func getPreguntas() -> Void {
-        while preguntas.count < 10 {
+        // Esto lo quitamos cuando haya mas preguntas
+        var max = 0
+        if nivel == 3 {
+            max = 4
+        }
+        else {
+            max = 10
+        }
+        
+        while preguntas.count < max {
             var value = 0
             if (nivel == 0) {
                 value = Int.random(in: 0 ... 14)
