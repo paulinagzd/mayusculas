@@ -33,10 +33,17 @@ class GameModeViewController: UIViewController {
     var correctoVF : Bool!
     
     var indicePregunta : Int!
+    var termina : Bool! = false
+    
+    var setPreguntas = Set<Int>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        indicePregunta = getPregunta()
+        if (setPreguntas.count > 0) {
+            indicePregunta = setPreguntas.first
+            setPreguntas.remove(indicePregunta)
+        }
+        print("la pregunta es:" + String(indicePregunta!))
         let dic = arrDatos[indicePregunta] as! NSDictionary
         scModalidades.selectedSegmentIndex = modalidad - 1
         
@@ -64,18 +71,11 @@ class GameModeViewController: UIViewController {
         title = "Nivel " + String(nivel)
         lbPuntos.text = "Puntos:" + String(puntos)
         print(String(pregunta))
-    }
-    
-    func getPregunta() -> Int {
-        if (nivel == 0) {
-            return Int.random(in: 0 ... 14)
-        } else if (nivel == 1) {
-            return Int.random(in: 15 ... 28)
-        } else {
-            return Int.random(in: 29 ... 33)
+        if pregunta > 9 {
+            pregunta = 0
+            puntos = 0
         }
     }
-    
     /*
         Esta función se encarga de randomizar los botones en la modalidad de
         "Por letra", además de crear el identificador que determina cuál de
@@ -187,16 +187,16 @@ class GameModeViewController: UIViewController {
         correcta o incorrecta
      */
     func retroRespuesta(flag : Bool) {
-        if (flag) {
+        if (flag && pregunta < 9) {
+            puntos += 10;
             let alert = UIAlertController(title: "¡Correcto!",
                                           message: "Excelente ortografía",
                                           preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            puntos += 10;
             lbPuntos.text = "Puntos:" + String(puntos)
         }
-        else {
+        else if (!flag && pregunta < 9){
             let alert = UIAlertController(title: "¡Incorrecto!",
                                           message: "Intenta de nuevo",
                                           preferredStyle: .alert)
@@ -247,17 +247,11 @@ class GameModeViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if (sender as! UIButton) == buttonIzquierdo || (sender as! UIButton) == buttonDerecho {
-            print("entro")
-            if pregunta == 9 {
-                return true
-            }
-        }
-        return false
+        return pregunta == 9
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vistaPuntaje = segue.destination as! ScoreViewController
-        vistaPuntaje.puntos = puntos
+        vistaPuntaje.puntos = puntos + 10
     }
 }

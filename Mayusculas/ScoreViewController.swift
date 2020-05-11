@@ -15,13 +15,19 @@ class ScoreViewController: UIViewController, MFMailComposeViewControllerDelegate
     var puntos : Int!
     
     override func viewDidLoad() {
+        self.navigationItem.hidesBackButton = true
+        self.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false
+        self.navigationController!.interactivePopGestureRecognizer!.isEnabled = false;
+        
+        lbPuntaje.text = String(puntos!) + " " + "puntos"
         super.viewDidLoad()
-
-        lbPuntaje.text = String(puntos!) + "puntos"
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func returnMenu(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     @IBAction func sendEmail(_ sender: Any) {
         let mailComposeViewController = configureMailController()
         if MFMailComposeViewController.canSendMail() {
