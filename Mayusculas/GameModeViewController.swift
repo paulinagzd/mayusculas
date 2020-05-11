@@ -188,19 +188,16 @@ class GameModeViewController: UIViewController {
         correcta o incorrecta
      */
     func retroRespuesta(flag : Bool) {
-        if (flag) {
+        if (flag && pregunta < 9) {
+            puntos += 10;
             let alert = UIAlertController(title: "¡Correcto!",
                                           message: "Excelente ortografía",
                                           preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            puntos += 10;
             lbPuntos.text = "Puntos:" + String(puntos)
-            if(pregunta == 9) {
-                termina = true;
-            }
         }
-        else {
+        else if (!flag && pregunta < 9){
             let alert = UIAlertController(title: "¡Incorrecto!",
                                           message: "Intenta de nuevo",
                                           preferredStyle: .alert)
@@ -251,11 +248,11 @@ class GameModeViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return termina
+        return pregunta == 9
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vistaPuntaje = segue.destination as! ScoreViewController
-        vistaPuntaje.puntos = puntos
+        vistaPuntaje.puntos = puntos + 10
     }
 }
