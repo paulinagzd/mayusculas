@@ -35,9 +35,15 @@ class GameModeViewController: UIViewController {
     var indicePregunta : Int!
     var termina : Bool! = false
     
+    var setPreguntas = Set<Int>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        indicePregunta = getPregunta()
+        if (setPreguntas.count > 0) {
+            indicePregunta = setPreguntas.first
+            setPreguntas.remove(indicePregunta)
+        }
+        print("la pregunta es:" + String(indicePregunta!))
         let dic = arrDatos[indicePregunta] as! NSDictionary
         scModalidades.selectedSegmentIndex = modalidad - 1
         
@@ -70,17 +76,6 @@ class GameModeViewController: UIViewController {
             puntos = 0
         }
     }
-    
-    func getPregunta() -> Int {
-        if (nivel == 0) {
-            return Int.random(in: 0 ... 14)
-        } else if (nivel == 1) {
-            return Int.random(in: 15 ... 28)
-        } else {
-            return Int.random(in: 29 ... 33)
-        }
-    }
-    
     /*
         Esta función se encarga de randomizar los botones en la modalidad de
         "Por letra", además de crear el identificador que determina cuál de

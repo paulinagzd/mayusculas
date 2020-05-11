@@ -13,6 +13,7 @@ class ViewController: UIViewController, protocoloSettings {
     var arrDatos: NSArray!
     var nivel: Int = 1 // 1 = principiante,  2 = intermedio,  3 = avanzado
     var modalidad: Int = 1 // 1 = por letra,  2 = por certeza (VoF),  3 = completar
+    var preguntas = Set<Int>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,21 @@ class ViewController: UIViewController, protocoloSettings {
         //item 0 - 14 : niv 0
         //item 15 - 28 : niv 1
         //item 29 - 33 : niv 2
+    }
+    
+    func getPreguntas() -> Void {
+        while preguntas.count < 10 {
+            var value = 0
+            if (nivel == 0) {
+                value = Int.random(in: 0 ... 14)
+            } else if (nivel == 1) {
+                value = Int.random(in: 15 ... 28)
+            } else {
+                value = Int.random(in: 29 ... 33)
+            }
+            preguntas.insert(value)
+        }
+        print(preguntas)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,6 +48,8 @@ class ViewController: UIViewController, protocoloSettings {
             vistaMod.delegado = self
         } else if segue.identifier == "iniciar" {
             let vistaIniciar = segue.destination as! GameModeViewController
+            getPreguntas()
+            vistaIniciar.setPreguntas = preguntas
             vistaIniciar.nivel = nivel
             vistaIniciar.modalidad = modalidad
             vistaIniciar.arrDatos = arrDatos
