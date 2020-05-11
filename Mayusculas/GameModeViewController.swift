@@ -249,7 +249,7 @@ class GameModeViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if (sender as! UIButton) == buttonIzquierdo || (sender as! UIButton) == buttonDerecho {
             print("entro")
-            if pregunta == 2 {
+            if pregunta == 9 {
                 return true
             }
         }
