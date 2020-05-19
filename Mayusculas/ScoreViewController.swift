@@ -30,34 +30,44 @@ class ScoreViewController: UIViewController, MFMailComposeViewControllerDelegate
     }
     
     @IBAction func sendEmail(_ sender: Any) {
-        let mailComposeViewController = configureMailController()
+        let mailComposeViewController = configureMailComposeViewController()
+        
         if MFMailComposeViewController.canSendMail() {
-            self.present(mailComposeViewController, animated: true, completion: nil)
+            self.present(mailComposeViewController, animated: true)
         } else {
-            showMailError()
+            self.showSendMailErrorAlert()
         }
     }
     
-    func configureMailController() -> MFMailComposeViewController {
-        let mailComposerVC = MFMailComposeViewController()
+    func configureMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposeVC = MFMailComposeViewController()
         
-        mailComposerVC.mailComposeDelegate = self
-        mailComposerVC.setToRecipients(["paulinagdavalos@gmail.com"])
-        mailComposerVC.setSubject("Puntaje Mayúsculas")
-        mailComposerVC.setMessageBody("¡Felicidades! Obtuviste \(String(puntos)) puntos en el juego de mayúsculas", isHTML: false)
+        mailComposeVC.mailComposeDelegate = self
+        mailComposeVC.setToRecipients(["paulinagdavalos@gmail.com"])
+        mailComposeVC.setSubject("Puntaje Mayúsculas")
+        mailComposeVC.setMessageBody("¡Felicidades! Obtuviste \(String(puntos)) puntos en el juego de mayúsculas", isHTML: false)
         
-        return mailComposerVC
+        return mailComposeVC
     }
     
-    func showMailError() {
-        let sendMailErrorAlert = UIAlertController(title: "Error al mandar correo", message: "Su dispositivo no pudo mandar el correo", preferredStyle: .alert)
-        let dismiss = UIAlertAction(title: "OK", style: .default, handler: nil)
-        sendMailErrorAlert.addAction(dismiss)
-        self.present(sendMailErrorAlert, animated: true, completion: nil)
+    func showSendMailErrorAlert() {
+        let alert = UIAlertController(title: "Error al mandar correo", message: "Verifique el correo ingresado o su dispositivo.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true, completion: nil)
+        switch result {
+        case MFMailComposeResult.cancelled:
+            self.dismiss(animated: true, completion: nil)
+        case MFMailComposeResult.failed:
+            self.showSendMailErrorAlert()
+            self.dismiss(animated: true, completion: nil)
+        case MFMailComposeResult.sent:
+            self.dismiss(animated: true, completion: nil)
+        default:
+            break
+        }
     }
     
     /*
