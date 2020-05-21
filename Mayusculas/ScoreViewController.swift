@@ -29,7 +29,11 @@ class ScoreViewController: UIViewController {
     }
     
     @IBAction func sendEmail(_ sender: Any) {
-        print("TODO funcionalidad")
+            let share = "¡Felicidades! Obtuviste \(String(puntos)) puntos en el juego de Mayúsculas"
+            // se puede compartir texto, imagenes, url
+            let activityViewController = UIActivityViewController(activityItems: [share], applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+            self.present(activityViewController, animated: true, completion: nil)
     }
     
     /*
