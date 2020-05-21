@@ -20,6 +20,7 @@ class ScoreViewController: UIViewController {
         self.navigationController!.interactivePopGestureRecognizer!.isEnabled = false;
         print(reglas)
         lbPuntaje.text = String(puntos!) + " " + "puntos"
+        print(puntos)
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
