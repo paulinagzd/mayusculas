@@ -38,13 +38,15 @@ class GameModeViewController: UIViewController {
     var setPreguntas = Set<Int>()
     var reglasExpotar = [String]()
     
+    /*
+        viewDidLoad
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         if (setPreguntas.count > 0) {
             indicePregunta = setPreguntas.first
             setPreguntas.remove(indicePregunta)
         }
-        // print("la pregunta es:" + String(indicePregunta!))
         let dic = arrDatos[indicePregunta] as! NSDictionary
         scModalidades.selectedSegmentIndex = modalidad - 1
         
@@ -68,12 +70,14 @@ class GameModeViewController: UIViewController {
 
         title = "Nivel " + String(nivel)
         lbPuntos.text = "Puntos:" + String(puntos)
-        // print(String(pregunta))
-        if pregunta > 9 {
+        
+        // Reinicar valor de puntos y numero de pregunta
+        if pregunta > 10 {
             pregunta = 0
             puntos = 0
         }
     }
+    
     /*
         Esta función se encarga de randomizar los botones en la modalidad de
         "Por letra", además de crear el identificador que determina cuál de
@@ -87,8 +91,6 @@ class GameModeViewController: UIViewController {
         print(dr)
         let rand = Int.random(in: 0 ... 1)
         if rand == 0 {
-            print("random")
-            print(String(rand))
             buttonIzquierdo.setTitle(lowerCased, for: .normal)
             buttonDerecho.setTitle(lowerCased?.capitalized, for: .normal)
             if dic["respuesta"] as! String == "min" {
@@ -97,8 +99,6 @@ class GameModeViewController: UIViewController {
                 identificadorL = "derecha"
             }
         } else {
-            print("random")
-            print(String(rand))
             buttonIzquierdo.setTitle(lowerCased?.capitalized, for: .normal)
             buttonDerecho.setTitle(lowerCased, for: .normal)
             if dic["respuesta"] as! String == "min" {
@@ -135,6 +135,10 @@ class GameModeViewController: UIViewController {
         }
     }
     
+    /*
+        Esta funcion se encarga de revisar la respuesta para las
+        modalidades de certeza y por letra del botón izquierdo.
+     */
     @IBAction func tapBotonIzquierdo(_ sender: Any) {
         if modalidad == 1 {
             if identificadorL == "izquierda" {
@@ -151,6 +155,10 @@ class GameModeViewController: UIViewController {
         }
     }
     
+    /*
+       Esta funcion se encarga de revisar la respuesta para las
+       modalidades de certeza y por letra del botón izquierdo.
+    */
     @IBAction func tapBotonDerecho(_ sender: Any) {
         if modalidad == 1 {
             if identificadorL == "izquierda" {
@@ -167,7 +175,7 @@ class GameModeViewController: UIViewController {
             }
         }
     }
-    
+
     /*
         fraseCompletada
         Evalúa la respuesta de la modalidad de completar
@@ -192,30 +200,48 @@ class GameModeViewController: UIViewController {
         correcta o incorrecta
      */
     func retroRespuesta(flag : Bool) {
-        if (flag && pregunta < 9) {
+        if (flag) {
             puntos += 10;
+            lbPuntos.text = "Puntos:" + String(puntos)
+            
             let alert = UIAlertController(title: "¡Correcto!",
                                           message: "Excelente ortografía",
                                           preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            if (pregunta == 9) {
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
+                    self.performSegue(withIdentifier: "score", sender: self)}
+                ))
+            } else if (pregunta < 9){
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            }
+            
             self.present(alert, animated: true, completion: nil)
-            lbPuntos.text = "Puntos:" + String(puntos)
         }
-        else if (!flag && pregunta < 9){
+        else if (!flag){
+            lbPuntos.text = "Puntos: " + String(puntos)
+            
             let alert = UIAlertController(title: "¡Incorrecto!",
                                           message: "Intenta de nuevo",
                                           preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            if puntos >= 10 {
-                puntos -= 10
+            if (pregunta == 9) {
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
+                    self.performSegue(withIdentifier: "score", sender: self)
+                    }
+                ))
+            } else if (pregunta < 9){
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             }
-            lbPuntos.text = "Puntos: " + String(puntos)
+            
+            self.present(alert, animated: true, completion: nil)
         }
         pregunta = pregunta + 1
         viewDidLoad()
     }
     
+    /*
+        mostrarHint
+        Despliega alerta con la regla aplicada durante una pregunta
+     */
     @IBAction func mostrarHint(_ sender: UIButton) {
         let dic = arrDatos[indicePregunta] as! NSDictionary
         let hint = dic["hint"] as? String
@@ -224,6 +250,10 @@ class GameModeViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    /*
+        cambioModalidad
+        Handler para cambiar la modalidad de juego
+     */
     @IBAction func cambioModalidad(_ sender: UISegmentedControl) {
         let dic = arrDatos[indicePregunta] as! NSDictionary
 
@@ -251,13 +281,14 @@ class GameModeViewController: UIViewController {
         }
     }
     
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return pregunta == 9
-    }
-    
+    /*
+        prepare for segue
+     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vistaPuntaje = segue.destination as! ScoreViewController
-        vistaPuntaje.puntos = puntos + 10
-        vistaPuntaje.reglas = reglasExpotar
+        if segue.identifier == "score" {
+            let vistaPuntaje = segue.destination as! ScoreViewController
+            vistaPuntaje.puntos = puntos
+            vistaPuntaje.reglas = reglasExpotar
+        }
     }
 }
