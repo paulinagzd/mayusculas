@@ -261,4 +261,8 @@ class GameModeViewController: UIViewController {
         vistaPuntaje.puntos = puntos + 10
         vistaPuntaje.reglas = reglasExpotar
     }
+    
+    @IBAction func quitaTeclado(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
 }
