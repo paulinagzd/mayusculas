@@ -20,7 +20,6 @@ class ScoreViewController: UIViewController {
         self.navigationController!.interactivePopGestureRecognizer!.isEnabled = false;
         print(reglas)
         lbPuntaje.text = String(puntos!) + " " + "puntos"
-        print(puntos)
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -33,10 +32,24 @@ class ScoreViewController: UIViewController {
             let share = "¡Felicidades! Obtuviste \(String(puntos)) puntos en el juego de Mayúsculas"
             // se puede compartir texto, imagenes, url
             let activityViewController = UIActivityViewController(activityItems: [share], applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view
+            activityViewController.popoverPresentationController?.sourceView = self.view
             self.present(activityViewController, animated: true, completion: nil)
     }
     
+    @IBAction func sendRules(_ sender: Any) {
+        var text = "Reglas ortográficas vistas en el ejercicio: \n\n"
+        var i = 0
+        for rule in reglas {
+            i += 1
+            text += ("\(i). \(rule)" + "\n")
+        }
+        let share = [text]
+        let activityViewController = UIActivityViewController(activityItems: share, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
+        print(String(text))
+        
+    }
     /*
     // MARK: - Navigation
 

@@ -62,7 +62,6 @@ class ViewController: UIViewController, protocoloSettings {
             vistaIniciar.modalidad = modalidad
             vistaIniciar.arrDatos = arrDatos
             vistaIniciar.reglasExpotar = reglas
-            print(reglas)
         }
     }
     
