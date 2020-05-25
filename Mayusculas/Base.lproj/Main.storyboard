@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVX-ph-P9b">
-                                <rect key="frame" x="29" y="181.5" width="317" height="304"/>
+                                <rect key="frame" x="29" y="296" width="356" height="304"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPI-fC-VfV">
-                                        <rect key="frame" x="48.5" y="90" width="220" height="38"/>
+                                        <rect key="frame" x="68" y="90" width="220" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="220" id="kwf-zk-bzq"/>
@@ -27,7 +27,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Iniciar">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="aber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rbs-dc-hbm"/>
@@ -35,7 +35,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EE-c5-Tt8">
-                                        <rect key="frame" x="48.5" y="136" width="220" height="38"/>
+                                        <rect key="frame" x="68" y="136" width="220" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="220" id="fgp-gM-0aL"/>
@@ -43,14 +43,14 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Seleccionar nivel">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="wXb-0v-zbH" kind="show" identifier="niveles" id="S6k-hh-Bil"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mayúsculas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My0-sg-utN">
-                                        <rect key="frame" x="64" y="31" width="189" height="39"/>
+                                        <rect key="frame" x="83.5" y="31" width="189" height="39"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="189" id="je9-Cf-aq1"/>
                                         </constraints>
@@ -59,7 +59,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0M-hk-lrk">
-                                        <rect key="frame" x="48.5" y="182" width="220" height="38"/>
+                                        <rect key="frame" x="68" y="182" width="220" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="220" id="2ne-E7-hXk"/>
@@ -67,14 +67,14 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Seleccionar modalidad">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="wdb-PY-5G9" kind="show" identifier="modalidades" id="hFs-M3-Mmq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z04-9O-QG5">
-                                        <rect key="frame" x="48.5" y="228" width="220" height="38"/>
+                                        <rect key="frame" x="68" y="228" width="220" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="220" id="9lb-ck-093"/>
@@ -82,7 +82,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Cómo jugar">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="xUi-zq-aVm" kind="show" id="sgz-qc-OOq"/>
@@ -113,35 +113,35 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h1" translatesAutoresizingMaskIntoConstraints="NO" id="h5J-Al-S7t">
-                                <rect key="frame" x="29" y="53" width="70" height="87"/>
+                                <rect key="frame" x="29" y="97" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="XGm-WO-nZh"/>
                                     <constraint firstAttribute="width" constant="70" id="aUy-MS-mjA"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h3" translatesAutoresizingMaskIntoConstraints="NO" id="ifL-3y-OPj">
-                                <rect key="frame" x="152.5" y="86" width="70" height="87"/>
+                                <rect key="frame" x="172" y="200.5" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Nda-O7-wDA"/>
                                     <constraint firstAttribute="height" constant="87" id="nTv-C7-f5x"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h2" translatesAutoresizingMaskIntoConstraints="NO" id="9gK-A5-dvy">
-                                <rect key="frame" x="276" y="53" width="70" height="87"/>
+                                <rect key="frame" x="315" y="97" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="PKc-Ey-EOF"/>
                                     <constraint firstAttribute="height" constant="87" id="Rty-jE-8mV"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h4" translatesAutoresizingMaskIntoConstraints="NO" id="tAw-CG-VfY">
-                                <rect key="frame" x="276" y="503" width="70" height="87"/>
+                                <rect key="frame" x="315" y="617.5" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="DUO-K1-CYf"/>
                                     <constraint firstAttribute="height" constant="87" id="sDo-ab-989"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h5" translatesAutoresizingMaskIntoConstraints="NO" id="8PO-YA-zYJ">
-                                <rect key="frame" x="29" y="560" width="70" height="87"/>
+                                <rect key="frame" x="29" y="755" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="NZU-lM-kpm"/>
                                     <constraint firstAttribute="height" constant="87" id="Wg5-Qv-bfe"/>
@@ -178,20 +178,21 @@
             <objects>
                 <viewController id="ElW-Ls-hEK" customClass="GameModeViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pnc-tB-gza">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FU5-Ax-5tF">
-                                <rect key="frame" x="29" y="204" width="317" height="259"/>
+                                <rect key="frame" x="29" y="248" width="356" height="400"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="La _ierra da vueltas alrededor del Sol." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csN-vr-tGc">
-                                        <rect key="frame" x="8" y="46" width="301" height="167"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La _ierra da vueltas alrededor del Sol." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csN-vr-tGc">
+                                        <rect key="frame" x="8" y="174" width="340" height="52"/>
+
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Db-2X-uYC">
-                                        <rect key="frame" x="8" y="220.5" width="301" height="22.5"/>
+                                        <rect key="frame" x="8" y="361.5" width="340" height="22.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22.5" id="3SN-0t-S2e"/>
                                         </constraints>
@@ -215,7 +216,7 @@
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QIA-rz-kW8">
-                                <rect key="frame" x="29" y="78" width="317" height="32"/>
+                                <rect key="frame" x="29" y="122" width="356" height="32"/>
                                 <color key="backgroundColor" red="0.95288521049999997" green="0.94905501599999997" blue="0.9450898767" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <segments>
                                     <segment title="Por letra"/>
@@ -228,10 +229,10 @@
                                 </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igP-Zz-lo5">
-                                <rect key="frame" x="16" y="463" width="343" height="74"/>
+                                <rect key="frame" x="16" y="648" width="382" height="74"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdR-dM-kxq">
-                                        <rect key="frame" x="235" y="20" width="94" height="34"/>
+                                        <rect key="frame" x="274" y="20" width="94" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="94" id="SPk-Cv-zmz"/>
@@ -239,14 +240,14 @@
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Enviar">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="fraseCompletada:" destination="ElW-Ls-hEK" eventType="touchUpInside" id="sRb-w5-eay"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBa-pl-YDU">
-                                        <rect key="frame" x="14" y="20" width="216" height="34"/>
+                                        <rect key="frame" x="14" y="20" width="255" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -264,15 +265,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um2-c8-xjw">
-                                <rect key="frame" x="0.0" y="589" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="784" width="414" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxQ-fr-6ig">
-                                        <rect key="frame" x="8" y="11" width="0.0" height="0.0"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntos: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OC-4X-kqr">
                                         <rect key="frame" x="45" y="4" width="208" height="33"/>
                                         <constraints>
@@ -293,30 +287,34 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZw-uO-v5c">
-                                <rect key="frame" x="16" y="463" width="343" height="75"/>
+                                <rect key="frame" x="16" y="648" width="382" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28D-CP-ADa">
-                                        <rect key="frame" x="205" y="18" width="125" height="38"/>
+                                        <rect key="frame" x="244" y="18" width="125" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="lxI-ff-WJp"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Long Text ! ! !">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="tapBotonDerecho:" destination="ElW-Ls-hEK" eventType="touchUpInside" id="EP7-xK-QbK"/>
-                                            <segue destination="RNV-g0-5zg" kind="show" id="loV-aZ-cYq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78J-c7-fAa">
                                         <rect key="frame" x="13" y="18" width="125" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="Ip4-iG-wCj"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Long Text ! ! !">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="tapBotonIzquierdo:" destination="ElW-Ls-hEK" eventType="touchUpInside" id="eAC-13-9F6"/>
-                                            <segue destination="RNV-g0-5zg" kind="show" id="ePf-86-ut4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -334,7 +332,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUb-v7-bs2">
-                                <rect key="frame" x="321" y="136" width="25" height="24"/>
+                                <rect key="frame" x="360" y="180" width="25" height="24"/>
                                 <connections>
                                     <action selector="mostrarHint:" destination="ElW-Ls-hEK" eventType="touchUpInside" id="3FZ-Er-kyL"/>
                                 </connections>
@@ -394,6 +392,7 @@
                         <outlet property="viewBotones" destination="SZw-uO-v5c" id="9fk-5w-lb0"/>
                         <outlet property="viewCampo" destination="igP-Zz-lo5" id="DAf-3j-RfX"/>
                         <outlet property="viewPreguntas" destination="FU5-Ax-5tF" id="50z-Vk-bXX"/>
+                        <segue destination="RNV-g0-5zg" kind="show" identifier="score" id="gdc-AU-tY2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UjC-aB-qVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -410,14 +409,14 @@
             <objects>
                 <viewController id="wdb-PY-5G9" customClass="SettingsViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Mw-og-dEt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldd-nn-de3">
-                                <rect key="frame" x="29" y="211.5" width="317" height="244.5"/>
+                                <rect key="frame" x="29" y="326" width="356" height="244.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9b-8z-0Ca">
-                                        <rect key="frame" x="59.5" y="90.5" width="198" height="38"/>
+                                        <rect key="frame" x="79" y="90.5" width="198" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="yni-K9-LbY"/>
@@ -425,14 +424,14 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Por letra">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="porLetra:" destination="wdb-PY-5G9" eventType="touchUpInside" id="mi3-0p-FQf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKH-n2-2J7">
-                                        <rect key="frame" x="59.5" y="136.5" width="198" height="38"/>
+                                        <rect key="frame" x="79" y="136.5" width="198" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="NvX-hw-LYn"/>
@@ -440,7 +439,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Por certeza">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -448,7 +447,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSG-oY-TaX">
-                                        <rect key="frame" x="59.5" y="182.5" width="198" height="38"/>
+                                        <rect key="frame" x="79" y="182.5" width="198" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="4cn-Fn-nmj"/>
@@ -456,20 +455,20 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Completar">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="completar:" destination="wdb-PY-5G9" eventType="touchUpInside" id="Fum-iw-TXr"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(se puede cambiar durante el juego)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPN-d0-pDX">
-                                        <rect key="frame" x="50.5" y="227" width="216.5" height="17"/>
+                                        <rect key="frame" x="70" y="227" width="216.5" height="17"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige tu modalidad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE3-I1-Sgt">
-                                        <rect key="frame" x="66.5" y="8" width="184" height="78"/>
+                                        <rect key="frame" x="86" y="8" width="184" height="78"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="184" id="KGF-Ux-QGZ"/>
                                         </constraints>
@@ -520,14 +519,14 @@
             <objects>
                 <viewController id="wXb-0v-zbH" customClass="SettingsViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MD9-LW-oQp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cU4-DV-8Lo">
-                                <rect key="frame" x="29" y="208" width="317" height="251"/>
+                                <rect key="frame" x="29" y="322.5" width="356" height="251"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6D-K3-QbC">
-                                        <rect key="frame" x="59.5" y="90" width="198" height="38"/>
+                                        <rect key="frame" x="79" y="90" width="198" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="198" id="Jok-cV-TBD"/>
@@ -535,14 +534,14 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Principiante">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="principiante:" destination="wXb-0v-zbH" eventType="touchUpInside" id="oaI-nB-Ol5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9A-kf-8Es">
-                                        <rect key="frame" x="59.5" y="136" width="198" height="38"/>
+                                        <rect key="frame" x="79" y="136" width="198" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="lUd-qe-nzy"/>
@@ -550,7 +549,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Intermedio">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -558,7 +557,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17E-SC-I0a">
-                                        <rect key="frame" x="59.5" y="182" width="198" height="38"/>
+                                        <rect key="frame" x="79" y="182" width="198" height="38"/>
                                         <color key="backgroundColor" red="0.58650481700000001" green="0.76821422579999998" blue="0.79607909919999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="8pH-NG-Xod"/>
@@ -566,14 +565,14 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <state key="normal" title="Avanzado">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="avanzado:" destination="wXb-0v-zbH" eventType="touchUpInside" id="qRN-AL-oWr"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige tu nivel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH8-AC-KFY">
-                                        <rect key="frame" x="56" y="31" width="205" height="39"/>
+                                        <rect key="frame" x="75.5" y="31" width="205" height="39"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="205" id="HwP-Mc-XH0"/>
                                         </constraints>
@@ -622,7 +621,7 @@
             <objects>
                 <navigationController id="CuF-3c-j7t" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EVn-ar-mUq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -638,11 +637,11 @@
             <objects>
                 <viewController id="xUi-zq-aVm" customClass="ViewControllerComoJugar" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4zh-of-FU2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="soW-HF-qxV">
-                                <rect key="frame" x="29" y="421" width="317" height="159"/>
+                                <rect key="frame" x="29" y="559" width="356" height="206"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPLETAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkQ-rg-VZK">
                                         <rect key="frame" x="8" y="0.0" width="104.5" height="23.5"/>
@@ -655,7 +654,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teclea la palabra correcta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDA-mE-Gqf">
-                                        <rect key="frame" x="8" y="63.5" width="301" height="32.5"/>
+                                        <rect key="frame" x="8" y="87" width="340" height="32.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -672,7 +671,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbK-hk-k36">
-                                <rect key="frame" x="29" y="87" width="317" height="159"/>
+                                <rect key="frame" x="29" y="131" width="356" height="206"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POR LETRA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs3-S3-mUa">
                                         <rect key="frame" x="8" y="0.0" width="92" height="23.5"/>
@@ -685,7 +684,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presiona el botón de la letra correcta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy0-KN-Wc5">
-                                        <rect key="frame" x="8" y="47" width="301" height="65"/>
+                                        <rect key="frame" x="8" y="70.5" width="340" height="65"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -704,7 +703,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9MV-1d-vEf">
-                                <rect key="frame" x="29" y="254" width="317" height="159"/>
+                                <rect key="frame" x="29" y="345" width="356" height="206"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POR CERTEZA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfb-WZ-DWb">
                                         <rect key="frame" x="8" y="0.0" width="117" height="23.5"/>
@@ -717,7 +716,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presiona el botón de verdadero o falso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJQ-xA-a0f">
-                                        <rect key="frame" x="8" y="47" width="301" height="65"/>
+                                        <rect key="frame" x="8" y="70.5" width="340" height="65"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -739,6 +738,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="soW-HF-qxV" firstAttribute="top" secondItem="9MV-1d-vEf" secondAttribute="bottom" constant="8" id="2I5-z8-iOj"/>
+                            <constraint firstItem="9MV-1d-vEf" firstAttribute="height" secondItem="NbK-hk-k36" secondAttribute="height" id="4Mj-3u-hAz"/>
                             <constraint firstItem="9MV-1d-vEf" firstAttribute="top" secondItem="NbK-hk-k36" secondAttribute="bottom" constant="8" id="6ag-9Y-p3z"/>
                             <constraint firstItem="soW-HF-qxV" firstAttribute="height" secondItem="9MV-1d-vEf" secondAttribute="height" id="9Up-QF-9wB"/>
                             <constraint firstItem="9MV-1d-vEf" firstAttribute="centerY" secondItem="4zh-of-FU2" secondAttribute="centerY" id="E2D-1G-kmO"/>
@@ -749,8 +749,9 @@
                             <constraint firstItem="WkX-yO-jgl" firstAttribute="trailing" secondItem="9MV-1d-vEf" secondAttribute="trailing" constant="29" id="b0V-qm-CSa"/>
                             <constraint firstItem="NbK-hk-k36" firstAttribute="centerX" secondItem="4zh-of-FU2" secondAttribute="centerX" id="eCW-oo-BbD"/>
                             <constraint firstItem="NbK-hk-k36" firstAttribute="leading" secondItem="9MV-1d-vEf" secondAttribute="leading" id="eWU-0L-d3N"/>
-                            <constraint firstItem="WkX-yO-jgl" firstAttribute="bottom" secondItem="soW-HF-qxV" secondAttribute="bottom" constant="38" id="euv-MM-Tze"/>
+                            <constraint firstItem="WkX-yO-jgl" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="soW-HF-qxV" secondAttribute="bottom" constant="38" id="euv-MM-Tze"/>
                             <constraint firstItem="9MV-1d-vEf" firstAttribute="leading" secondItem="WkX-yO-jgl" secondAttribute="leading" constant="29" id="iQk-NU-b68"/>
+                            <constraint firstItem="soW-HF-qxV" firstAttribute="height" secondItem="NbK-hk-k36" secondAttribute="height" id="uQl-xs-OW1"/>
                             <constraint firstItem="soW-HF-qxV" firstAttribute="width" secondItem="9MV-1d-vEf" secondAttribute="width" id="wAR-ag-bZY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WkX-yO-jgl"/>
@@ -768,17 +769,17 @@
             <objects>
                 <viewController id="RNV-g0-5zg" customClass="ScoreViewController" customModule="Mayusculas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DOy-wf-w4e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Gn-l1-CJh">
-                                <rect key="frame" x="29" y="259" width="317" height="149"/>
+                                <rect key="frame" x="29" y="370.5" width="356" height="155"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzY-q5-U0y">
-                                        <rect key="frame" x="0.0" y="0.0" width="317" height="78"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="84"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juego terminado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kN-W7-01U">
-                                                <rect key="frame" x="21" y="19" width="275" height="39"/>
+                                                <rect key="frame" x="21" y="19" width="314" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8kN-W7-01U" secondAttribute="height" multiplier="275:39" id="Ecb-dX-EMZ"/>
                                                 </constraints>
@@ -802,10 +803,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUX-x3-6Cf">
-                                        <rect key="frame" x="0.0" y="79" width="317" height="70"/>
+                                        <rect key="frame" x="0.0" y="85" width="356" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 puntos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOT-Tu-j6g">
-                                                <rect key="frame" x="8" y="6" width="301" height="59"/>
+                                                <rect key="frame" x="8" y="6" width="340" height="59"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="45"/>
                                                 <color key="textColor" red="0.18852880599999999" green="0.26429054140000002" blue="0.96476012470000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -822,7 +823,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrs-sB-rTI">
-                                <rect key="frame" x="87" y="497" width="201" height="38"/>
+                                <rect key="frame" x="106.5" y="614.5" width="201" height="38"/>
                                 <color key="backgroundColor" red="0.93824726339999998" green="0.45591771599999997" blue="0.39996799830000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="Obw-v7-Kf5"/>
@@ -830,14 +831,14 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <state key="normal" title="Regresar al menú">
-                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="returnMenu:" destination="RNV-g0-5zg" eventType="touchUpInside" id="vbr-3F-prS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrz-2W-v1h">
-                                <rect key="frame" x="107.5" y="452" width="160" height="32"/>
+                                <rect key="frame" x="127" y="569.5" width="160" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="CmP-bT-3gE"/>
                                     <constraint firstAttribute="height" constant="32" id="DmR-au-55h"/>
@@ -846,7 +847,7 @@
                                 <state key="normal" title="Descargar normas"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfg-J1-ITd">
-                                <rect key="frame" x="107.5" y="422" width="160" height="32"/>
+                                <rect key="frame" x="127" y="539.5" width="160" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="EX0-xs-MyW"/>
                                     <constraint firstAttribute="height" constant="32" id="ZTu-jW-ncC"/>
@@ -858,35 +859,35 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h4" translatesAutoresizingMaskIntoConstraints="NO" id="e1f-Yz-Wwg">
-                                <rect key="frame" x="276" y="534" width="70" height="87"/>
+                                <rect key="frame" x="315" y="651.5" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="9NN-cX-Tig"/>
                                     <constraint firstAttribute="height" constant="87" id="jQb-2Y-Ewc"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h5" translatesAutoresizingMaskIntoConstraints="NO" id="PZm-l1-jUL">
-                                <rect key="frame" x="29" y="560" width="70" height="87"/>
+                                <rect key="frame" x="29" y="755" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="cHF-7I-a6I"/>
                                     <constraint firstAttribute="height" constant="87" id="yhE-vE-llu"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h1" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-rf-iSD">
-                                <rect key="frame" x="29" y="75" width="70" height="87"/>
+                                <rect key="frame" x="29" y="119" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="flQ-7Y-22o"/>
                                     <constraint firstAttribute="height" constant="87" id="yX1-on-lvD"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h3" translatesAutoresizingMaskIntoConstraints="NO" id="9g1-Ll-Utu">
-                                <rect key="frame" x="152.5" y="108" width="70" height="87"/>
+                                <rect key="frame" x="172" y="152" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="8SQ-jt-Oxz"/>
                                     <constraint firstAttribute="width" constant="70" id="TCX-CG-w2y"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h2" translatesAutoresizingMaskIntoConstraints="NO" id="Mty-ML-A1W">
-                                <rect key="frame" x="276" y="75" width="70" height="87"/>
+                                <rect key="frame" x="315" y="119" width="70" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="gSk-Ok-2Ua"/>
                                     <constraint firstAttribute="width" constant="70" id="y2J-md-RK7"/>
@@ -937,7 +938,4 @@
         <image name="h4" width="760" height="960"/>
         <image name="h5" width="760" height="960"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="loV-aZ-cYq"/>
-    </inferredMetricsTieBreakers>
 </document>
