@@ -186,6 +186,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La _ierra da vueltas alrededor del Sol." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csN-vr-tGc">
                                         <rect key="frame" x="8" y="174" width="340" height="52"/>
+
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -338,6 +339,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="QIA-rz-kW8" firstAttribute="centerX" secondItem="Pnc-tB-gza" secondAttribute="centerX" id="0Py-CB-UqN"/>
                             <constraint firstItem="um2-c8-xjw" firstAttribute="trailing" secondItem="HC8-U4-PiV" secondAttribute="trailing" id="0yz-DB-U9h"/>
@@ -373,6 +375,9 @@
                             <constraint firstItem="SZw-uO-v5c" firstAttribute="centerX" secondItem="Pnc-tB-gza" secondAttribute="centerX" id="zgD-dH-0Nu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HC8-U4-PiV"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vvs-h8-JES" appends="YES" id="l19-dH-f8r"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="CNR-uQ-cyn"/>
                     <connections>
@@ -391,6 +396,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UjC-aB-qVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vvs-h8-JES">
+                    <connections>
+                        <action selector="quitaTeclado:" destination="ElW-Ls-hEK" id="QCl-GZ-pCb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="48.799999999999997" y="-520.38980509745136"/>
         </scene>

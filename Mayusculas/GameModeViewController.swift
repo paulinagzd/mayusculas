@@ -278,6 +278,7 @@ class GameModeViewController: UIViewController {
             viewBotones.isHidden = true
             viewCampo.isHidden = false
             lbSugPalabra.isHidden = false
+            lbSugPalabra.text = dic["sugerenciaPalabra"] as? String
         }
     }
     
@@ -290,5 +291,9 @@ class GameModeViewController: UIViewController {
             vistaPuntaje.puntos = puntos
             vistaPuntaje.reglas = reglasExpotar
         }
+    }
+    
+    @IBAction func quitaTeclado(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 }
