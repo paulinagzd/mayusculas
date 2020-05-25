@@ -248,6 +248,7 @@ class GameModeViewController: UIViewController {
             viewBotones.isHidden = true
             viewCampo.isHidden = false
             lbSugPalabra.isHidden = false
+            lbSugPalabra.text = dic["sugerenciaPalabra"] as? String
         }
     }
     
