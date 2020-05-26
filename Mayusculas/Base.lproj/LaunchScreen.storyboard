@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +14,55 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyM-Hy-191">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="M" translatesAutoresizingMaskIntoConstraints="NO" id="d2L-K3-z3m">
+                                        <rect key="frame" x="43" y="8" width="154" height="154"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="154" id="Ww8-ne-VL5"/>
+                                            <constraint firstAttribute="width" constant="154" id="lyg-4m-ptf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mayúsculas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euu-tC-8Tj">
+                                        <rect key="frame" x="26" y="149" width="189" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="189" id="4mv-0n-ejh"/>
+                                            <constraint firstAttribute="height" constant="39" id="fXb-M5-mNM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                        <color key="textColor" red="0.18852880599999999" green="0.26429054140000002" blue="0.96476012470000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="euu-tC-8Tj" secondAttribute="bottom" constant="52" id="09y-69-re6"/>
+                                    <constraint firstItem="d2L-K3-z3m" firstAttribute="top" secondItem="DyM-Hy-191" secondAttribute="top" constant="8" id="7gY-Ze-Pg9"/>
+                                    <constraint firstAttribute="height" constant="240" id="Cvj-ND-ACP"/>
+                                    <constraint firstAttribute="trailing" secondItem="euu-tC-8Tj" secondAttribute="trailing" constant="25" id="Fxq-SV-DmT"/>
+                                    <constraint firstItem="euu-tC-8Tj" firstAttribute="leading" secondItem="DyM-Hy-191" secondAttribute="leading" constant="26" id="Ugm-U8-NEV"/>
+                                    <constraint firstAttribute="width" constant="240" id="aWS-2q-6ae"/>
+                                    <constraint firstItem="d2L-K3-z3m" firstAttribute="leading" secondItem="DyM-Hy-191" secondAttribute="leading" constant="43" id="s7u-Kh-ZPA"/>
+                                    <constraint firstAttribute="trailing" secondItem="d2L-K3-z3m" secondAttribute="trailing" constant="43" id="wu8-aF-svP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DyM-Hy-191" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aJC-pJ-Pl3"/>
+                            <constraint firstItem="DyM-Hy-191" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vdE-Pl-kDd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="M" width="500" height="500"/>
+    </resources>
 </document>

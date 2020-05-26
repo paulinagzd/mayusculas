@@ -1,32 +1,24 @@
 //
-//  ScoreViewController.swift
+//  CreditsViewController.swift
 //  Mayusculas
 //
-//  Created by Paulina González Dávalos on 5/9/20.
+//  Created by Paulina González Dávalos on 5/25/20.
 //  Copyright © 2020 Paulina González Dávalos. All rights reserved.
 //
 
 import UIKit
 
-class ScoreViewController: UIViewController {
-    @IBOutlet weak var lbPuntaje: UILabel!
+class CreditsViewController: UIViewController {
     @IBOutlet weak var h1: UIImageView!
     @IBOutlet weak var h2: UIImageView!
     @IBOutlet weak var h3: UIImageView!
     @IBOutlet weak var h4: UIImageView!
     @IBOutlet weak var h5: UIImageView!
     
-    var puntos : Int!
-    var reglas = [String]()
-    
     override func viewDidLoad() {
-        self.navigationItem.hidesBackButton = true
-        self.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false
-        self.navigationController!.interactivePopGestureRecognizer!.isEnabled = false;
-        print(reglas)
-        lbPuntaje.text = String(puntos!) + " " + "puntos"
         super.viewDidLoad()
-        
+
+        // Esconde las imágenes para pantallas pequeñas
         let screenRect = UIScreen.main.bounds
         let screenWidth = screenRect.size.width
         let screenHeight = screenRect.size.height
@@ -45,18 +37,7 @@ class ScoreViewController: UIViewController {
         }
     }
     
-    @IBAction func returnMenu(_ sender: Any) {
-        navigationController?.popToRootViewController(animated: true)
-    }
-    
-    @IBAction func sendEmail(_ sender: Any) {
-            let share = "¡Felicidades! Obtuviste \(String(puntos)) puntos en el juego de Mayúsculas"
-            // se puede compartir texto, imagenes, url
-            let activityViewController = UIActivityViewController(activityItems: [share], applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view
-            self.present(activityViewController, animated: true, completion: nil)
-    }
-    
+
     /*
     // MARK: - Navigation
 
