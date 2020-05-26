@@ -25,10 +25,6 @@ class ViewController: UIViewController, protocoloSettings {
         super.viewDidLoad()
         let path = Bundle.main.path(forResource: "db", ofType: "plist")
         arrDatos = NSArray(contentsOfFile: path!)
-        //item 0 - 14 : niv 0
-        //item 15 - 28 : niv 1
-        //item 29 - 33 : niv 2
-        
         let screenRect = UIScreen.main.bounds
         let screenWidth = screenRect.size.width
         let screenHeight = screenRect.size.height
@@ -45,30 +41,26 @@ class ViewController: UIViewController, protocoloSettings {
             h4.isHidden = false
             h5.isHidden = false
         }
+        //item 0 - 32 : niv 0
+        //item 33 - 65 : niv 1
+        //item 66 - 84 : niv 2
     }
     
     func getPreguntas() -> Void {
-        // Esto lo quitamos cuando haya mas preguntas
-        var max = 0
-        if nivel == 3 {
-            max = 4
-        }
-        else {
-            max = 10
-        }
         
-        while preguntas.count < max {
+        while preguntas.count < 10 {
             var value = 0
             if (nivel == 0) {
-                value = Int.random(in: 0 ... 14)
+                value = Int.random(in: 0 ... 32)
             } else if (nivel == 1) {
-                value = Int.random(in: 15 ... 28)
+                value = Int.random(in: 33 ... 65)
             } else {
-                value = Int.random(in: 29 ... 33)
+                value = Int.random(in: 66 ... 84)
             }
             preguntas.insert(value)
         }
         print(preguntas)
+        
         // Llenar arreglo de reglas a exportar
         for item in preguntas {
             let dic = arrDatos[item] as! NSDictionary
