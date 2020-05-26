@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController, protocoloSettings {
-
+    @IBOutlet weak var h1: UIImageView!
+    @IBOutlet weak var h2: UIImageView!
+    @IBOutlet weak var h3: UIImageView!
+    @IBOutlet weak var h4: UIImageView!
+    @IBOutlet weak var h5: UIImageView!
+    
     var arrDatos: NSArray!
     var nivel: Int = 1 // 1 = principiante,  2 = intermedio,  3 = avanzado
     var modalidad: Int = 1 // 1 = por letra,  2 = por certeza (VoF),  3 = completar
@@ -20,6 +25,22 @@ class ViewController: UIViewController, protocoloSettings {
         super.viewDidLoad()
         let path = Bundle.main.path(forResource: "db", ofType: "plist")
         arrDatos = NSArray(contentsOfFile: path!)
+        let screenRect = UIScreen.main.bounds
+        let screenWidth = screenRect.size.width
+        let screenHeight = screenRect.size.height
+        if screenWidth <= 320 && screenHeight <= 568 {
+            h1.isHidden = true
+            h2.isHidden = true
+            h3.isHidden = true
+            h4.isHidden = true
+            h5.isHidden = true
+        } else {
+            h1.isHidden = false
+            h2.isHidden = false
+            h3.isHidden = false
+            h4.isHidden = false
+            h5.isHidden = false
+        }
         //item 0 - 32 : niv 0
         //item 33 - 65 : niv 1
         //item 66 - 84 : niv 2
@@ -62,6 +83,9 @@ class ViewController: UIViewController, protocoloSettings {
             vistaIniciar.modalidad = modalidad
             vistaIniciar.arrDatos = arrDatos
             vistaIniciar.reglasExpotar = reglas
+            print(reglas)
+        } else if segue.identifier == "creditos" {
+            let _ = segue.destination as! CreditsViewController
         }
     }
     

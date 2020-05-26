@@ -10,6 +10,11 @@ import UIKit
 
 class ScoreViewController: UIViewController {
     @IBOutlet weak var lbPuntaje: UILabel!
+    @IBOutlet weak var h1: UIImageView!
+    @IBOutlet weak var h2: UIImageView!
+    @IBOutlet weak var h3: UIImageView!
+    @IBOutlet weak var h4: UIImageView!
+    @IBOutlet weak var h5: UIImageView!
     
     var puntos : Int!
     var reglas = [String]()
@@ -21,7 +26,23 @@ class ScoreViewController: UIViewController {
         print(reglas)
         lbPuntaje.text = String(puntos!) + " " + "puntos"
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let screenRect = UIScreen.main.bounds
+        let screenWidth = screenRect.size.width
+        let screenHeight = screenRect.size.height
+        if screenWidth <= 320 && screenHeight <= 568 {
+            h1.isHidden = true
+            h2.isHidden = true
+            h3.isHidden = true
+            h4.isHidden = true
+            h5.isHidden = true
+        } else {
+            h1.isHidden = false
+            h2.isHidden = false
+            h3.isHidden = false
+            h4.isHidden = false
+            h5.isHidden = false
+        }
     }
     
     @IBAction func returnMenu(_ sender: Any) {
