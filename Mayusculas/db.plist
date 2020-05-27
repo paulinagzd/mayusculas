@@ -98,7 +98,7 @@
 		<key>textPorLetra</key>
 		<string>Tengo una cita en el _AT</string>
 		<key>letraAPoner</key>
-		<string>s</string>
+		<string>S</string>
 		<key>textoCompletoMay</key>
 		<string>Tengo una cita en el SAT.</string>
 		<key>textoCompletoMin</key>
@@ -118,9 +118,9 @@
 		<key>nivel</key>
 		<integer>0</integer>
 		<key>textPorLetra</key>
-		<string>Tengo un tío que trabaja en el KFC.</string>
+		<string>Tengo un tío que trabaja en el _FC.</string>
 		<key>letraAPoner</key>
-		<string>I</string>
+		<string>K</string>
 		<key>textoCompletoMay</key>
 		<string>Tengo un tío que trabaja en el KFC.</string>
 		<key>textoCompletoMin</key>
@@ -252,7 +252,7 @@
 		<key>textPorLetra</key>
 		<string>La dinastía _ing gobernó China entre los años 1368 y 1644.</string>
 		<key>letraAPoner</key>
-		<string>n</string>
+		<string>m</string>
 		<key>textoCompletoMay</key>
 		<string>La dinastía Ming gobernó China entre los años 1368 y 1644.</string>
 		<key>textoCompletoMin</key>
@@ -294,7 +294,7 @@
 		<key>nivel</key>
 		<integer>0</integer>
 		<key>textPorLetra</key>
-		<string>El color celeste es mi favorito.</string>
+		<string>El color _eleste es mi favorito.</string>
 		<key>letraAPoner</key>
 		<string>c</string>
 		<key>textoCompletoMay</key>
