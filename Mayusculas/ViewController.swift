@@ -47,19 +47,18 @@ class ViewController: UIViewController, protocoloSettings {
     }
     
     func getPreguntas() -> Void {
-        
+        preguntas = []
         while preguntas.count < 10 {
             var value = 0
-            if (nivel == 0) {
+            if (nivel == 1) {
                 value = Int.random(in: 0 ... 32)
-            } else if (nivel == 1) {
+            } else if (nivel == 2) {
                 value = Int.random(in: 33 ... 65)
             } else {
                 value = Int.random(in: 66 ... 84)
             }
             preguntas.insert(value)
         }
-        print(preguntas)
         
         // Llenar arreglo de reglas a exportar
         for item in preguntas {
@@ -83,7 +82,6 @@ class ViewController: UIViewController, protocoloSettings {
             vistaIniciar.modalidad = modalidad
             vistaIniciar.arrDatos = arrDatos
             vistaIniciar.reglasExpotar = reglas
-            print(reglas)
         } else if segue.identifier == "creditos" {
             let _ = segue.destination as! CreditsViewController
         }
