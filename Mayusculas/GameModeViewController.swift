@@ -88,7 +88,6 @@ class GameModeViewController: UIViewController {
         let lowerCased = dic["letraAPoner"] as? String
         lbPregunta.text = dic["textPorLetra"] as? String
         let dr = dic["respuesta"] as! String
-        print(dr)
         let rand = Int.random(in: 0 ... 1)
         if rand == 0 {
             buttonIzquierdo.setTitle(lowerCased, for: .normal)
@@ -200,6 +199,7 @@ class GameModeViewController: UIViewController {
         correcta o incorrecta
      */
     func retroRespuesta(flag : Bool) {
+        tfCompletar.text = ""
         if (flag) {
             puntos += 10;
             lbPuntos.text = "Puntos:" + String(puntos)

@@ -23,7 +23,6 @@ class ScoreViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         self.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false
         self.navigationController!.interactivePopGestureRecognizer!.isEnabled = false;
-        print(reglas)
         lbPuntaje.text = String(puntos!) + " " + "puntos"
         super.viewDidLoad()
         
@@ -68,17 +67,6 @@ class ScoreViewController: UIViewController {
         let activityViewController = UIActivityViewController(activityItems: share, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         self.present(activityViewController, animated: true, completion: nil)
-        print(String(text))
-        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -98,7 +98,7 @@
 		<key>textPorLetra</key>
 		<string>Tengo una cita en el _AT</string>
 		<key>letraAPoner</key>
-		<string>S</string>
+		<string>s</string>
 		<key>textoCompletoMay</key>
 		<string>Tengo una cita en el SAT.</string>
 		<key>textoCompletoMin</key>
@@ -120,7 +120,7 @@
 		<key>textPorLetra</key>
 		<string>Tengo un tío que trabaja en el _FC.</string>
 		<key>letraAPoner</key>
-		<string>K</string>
+		<string>k</string>
 		<key>textoCompletoMay</key>
 		<string>Tengo un tío que trabaja en el KFC.</string>
 		<key>textoCompletoMin</key>
@@ -142,7 +142,7 @@
 		<key>textPorLetra</key>
 		<string>Estudio en el _TESM.</string>
 		<key>letraAPoner</key>
-		<string>I</string>
+		<string>i</string>
 		<key>textoCompletoMay</key>
 		<string>Estudio en el ITESM.</string>
 		<key>textoCompletoMin</key>
@@ -164,7 +164,7 @@
 		<key>textPorLetra</key>
 		<string>El IMS_ comenzó operaciones en 1944.</string>
 		<key>letraAPoner</key>
-		<string>S</string>
+		<string>s</string>
 		<key>textoCompletoMay</key>
 		<string>El IMSS comenzó operaciones en 1944.</string>
 		<key>textoCompletoMin</key>
@@ -186,7 +186,7 @@
 		<key>textPorLetra</key>
 		<string>La _MS tiene publicaciones actualizadas en su sitio web.</string>
 		<key>letraAPoner</key>
-		<string>O</string>
+		<string>o</string>
 		<key>textoCompletoMay</key>
 		<string>La OMS tiene publicaciones actualizadas en su sitio web.</string>
 		<key>textoCompletoMin</key>
@@ -208,7 +208,7 @@
 		<key>textPorLetra</key>
 		<string>La _AO coordina las actividades internacionales que buscan erradicar el hambre.</string>
 		<key>letraAPoner</key>
-		<string>F</string>
+		<string>f</string>
 		<key>textoCompletoMay</key>
 		<string>La FAO coordina las actividades internacionales que buscan erradicar el hambre.</string>
 		<key>textoCompletoMin</key>
@@ -1390,7 +1390,7 @@
 	</dict>
 	<dict>
 		<key>resCompletar</key>
-		<string>L</string>
+		<string>Leones</string>
 		<key>nivel</key>
 		<integer>1</integer>
 		<key>textPorLetra</key>
