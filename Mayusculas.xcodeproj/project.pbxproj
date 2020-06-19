@@ -14,6 +14,7 @@
 		406917A7244B80F20027E11F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406917A6244B80F20027E11F /* Assets.xcassets */; };
 		406917AA244B80F20027E11F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406917A8244B80F20027E11F /* LaunchScreen.storyboard */; };
 		406917B4244BD76B0027E11F /* ViewControllerComoJugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406917B3244BD76B0027E11F /* ViewControllerComoJugar.swift */; };
+		705BA6CC248C8D230071F994 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705BA6CB248C8D230071F994 /* CreditsViewController.swift */; };
 		70B59FC7244E7515004B29EB /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B59FC6244E7515004B29EB /* GameModeViewController.swift */; };
 		70F634B42468D27C00AF7B8B /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F634B32468D27C00AF7B8B /* ScoreViewController.swift */; };
 		D84E8C08244CFFB8008A1C86 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E8C07244CFFB8008A1C86 /* SettingsViewController.swift */; };
@@ -30,6 +31,7 @@
 		406917A9244B80F20027E11F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		406917AB244B80F20027E11F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		406917B3244BD76B0027E11F /* ViewControllerComoJugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerComoJugar.swift; sourceTree = "<group>"; };
+		705BA6CB248C8D230071F994 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		70B59FC6244E7515004B29EB /* GameModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
 		70F634B32468D27C00AF7B8B /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		D84E8C07244CFFB8008A1C86 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				406917A1244B80F10027E11F /* ViewController.swift */,
 				406917A3244B80F10027E11F /* Main.storyboard */,
 				D84E8C07244CFFB8008A1C86 /* SettingsViewController.swift */,
+				705BA6CB248C8D230071F994 /* CreditsViewController.swift */,
 				406917A6244B80F20027E11F /* Assets.xcassets */,
 				406917A8244B80F20027E11F /* LaunchScreen.storyboard */,
 				406917AB244B80F20027E11F /* Info.plist */,
@@ -157,6 +160,7 @@
 				70F634B42468D27C00AF7B8B /* ScoreViewController.swift in Sources */,
 				406917A2244B80F10027E11F /* ViewController.swift in Sources */,
 				70B59FC7244E7515004B29EB /* GameModeViewController.swift in Sources */,
+				705BA6CC248C8D230071F994 /* CreditsViewController.swift in Sources */,
 				4069179E244B80F10027E11F /* AppDelegate.swift in Sources */,
 				406917B4244BD76B0027E11F /* ViewControllerComoJugar.swift in Sources */,
 				D84E8C08244CFFB8008A1C86 /* SettingsViewController.swift in Sources */,
