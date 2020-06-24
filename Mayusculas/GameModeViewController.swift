@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameModeViewController: UIViewController {
+class GameModeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var scModalidades: UISegmentedControl!
     @IBOutlet weak var viewPreguntas: UIView!
     @IBOutlet weak var viewBotones: UIView!
@@ -21,7 +21,6 @@ class GameModeViewController: UIViewController {
     @IBOutlet weak var lbSugPalabra: UILabel!
     
     @IBOutlet weak var lbPuntos: UILabel!
-    
     
     var modalidad : Int!
     var nivel : Int!
@@ -38,15 +37,24 @@ class GameModeViewController: UIViewController {
     var setPreguntas = Set<Int>()
     var reglasExpotar = [String]()
     
+    /* Variable para teclado + scrollview */
+    @IBOutlet weak var scrollView: UIScrollView!
+    var activeField : UITextField!
+    
     /*
         viewDidLoad
      */
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Notificaciones de teclado
+        self.registrarseParaNotificacionesDeTeclado()
+        
         if (setPreguntas.count > 0) {
             indicePregunta = setPreguntas.first
             setPreguntas.remove(indicePregunta)
         }
+        
         let dic = arrDatos[indicePregunta] as! NSDictionary
         scModalidades.selectedSegmentIndex = modalidad - 1
         
@@ -87,8 +95,8 @@ class GameModeViewController: UIViewController {
     func porLetra(dic: NSDictionary) {
         let lowerCased = dic["letraAPoner"] as? String
         lbPregunta.text = dic["textPorLetra"] as? String
-        let dr = dic["respuesta"] as! String
         let rand = Int.random(in: 0 ... 1)
+        
         if rand == 0 {
             buttonIzquierdo.setTitle(lowerCased, for: .normal)
             buttonDerecho.setTitle(lowerCased?.capitalized, for: .normal)
@@ -293,7 +301,85 @@ class GameModeViewController: UIViewController {
         }
     }
     
+    //MARK: - Keyboard functions
+    
+    /*
+        quitaTeclado
+        Quita el teclado cuando el usuario hace tap en la vista
+        @param sender: UITapGestureRecognizer
+     */
     @IBAction func quitaTeclado(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
+    }
+    /*
+        tecladoSeMostro
+        @param aNotification: NSNotification
+        
+     */
+    @IBAction func tecladoSeMostro(aNotification: NSNotification) {
+         let kbSize = (aNotification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).cgRectValue.size
+
+         let contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: kbSize.height, right: 0.0)
+         scrollView.contentInset = contentInset
+         scrollView.scrollIndicatorInsets = contentInset
+
+         //scrollView.setContentOffset(CGPoint(x: 0.0, y: activeField.frame.origin.y - kbSize.height - 3), animated: true)
+        var aRect: CGRect = scrollView.frame
+        aRect.size.height -= kbSize.height
+        
+        if !aRect.contains(tfCompletar.frame.origin) {
+            scrollView.scrollRectToVisible(tfCompletar.frame, animated: true)
+        }
+
+     }
+    /*
+        tecladoSeMostro
+        Called when the UIKeyboardWillHideNotification is sent
+        @param aNotification: NSNotification
+    */
+    @IBAction func tecladoSeOculto(aNotification : NSNotification) {
+        let contentInsets = UIEdgeInsets.zero
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+    }
+    /*
+        registrarseParaNotificacionesDeTeclado
+        Observa las notificaciones para cuando el teclaod se meustra
+        o se oculta de la vista.
+     */
+    func registrarseParaNotificacionesDeTeclado(){
+        NotificationCenter.default.addObserver(self, selector: #selector(tecladoSeMostro(aNotification:)),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(tecladoSeOculto(aNotification:)),
+                                               name: UIResponder.keyboardDidHideNotification, object: nil)
+    }
+        
+    // Each text field in the interface sets the view controller as its delegate.
+    // Therefore, when a text field becomes active, it calls these methods.
+    func textFieldDidBeginEditing (_ textField : UITextField ){
+        activeField = textField
+    }
+    
+    func textFieldDidEndEditing (_ textField : UITextField ){
+        activeField = nil
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        fraseCompletada()
+        return true
+    }
+    
+    func fraseCompletada(){
+        let respuesta = tfCompletar.text
+            let dic = arrDatos[indicePregunta] as! NSDictionary
+            var isCorrect : Bool!
+        
+            if (respuesta == dic["resCompletar"] as? String) {
+                isCorrect = true
+            }
+            else {
+                isCorrect = false
+            }
+            retroRespuesta(flag : isCorrect)
     }
 }
