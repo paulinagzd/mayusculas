@@ -1,5 +1,15 @@
-# mayusculas
+# Mayúsculas
 
+![Mayusculas](/Mayusculas/M.png)
+
+La aplicación de Mayúsculas provee una herramienta móvil interactiva que ayude a estudiantes universitarios y preuniversitarios a practicar el uso de las mayúsculas y minúsculas de acuerdo a las reglas académicas vigentes y también que sea capaz de reconocer los usos correctos de las mayúsculas en contexto de textos académicos y científicos. El sistema fomentará el aprendizaje a través de distintos niveles como el completar oraciones, señalar si las afirmaciones son verdaderas o falsas o rellenar espacios en blanco.
+
+Esta aplicación espera educar al usuario para que sea capaz de:
+* Aplicar las normas básicas de uso de mayúsculas y minúsculas.
+* Aplicar las normas básicas de uso diacrítico de mayúsculas.
+* Aplicar las normas de uso de mayúsculas en textos académicos y científicos.
+* Monitorear su proceso
+------
 HOW TO PR:
 * Una branch por funcionalidad
 * Commit message que describa los cambios hechos

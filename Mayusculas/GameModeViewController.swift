@@ -207,6 +207,7 @@ class GameModeViewController: UIViewController, UITextFieldDelegate {
         correcta o incorrecta
      */
     func retroRespuesta(flag : Bool) {
+        tfCompletar.text = ""
         if (flag) {
             puntos += 10;
             lbPuntos.text = "Puntos:" + String(puntos)
